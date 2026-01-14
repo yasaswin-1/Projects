@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaculture-Agriculture Irrigation Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #0097a7;
+            /* Cyan/Teal (Nutrient Water) */
+            --secondary: #689f38;
+            /* Crop Green */
+            --accent: #ffb300;
+            /* Harvest Gold */
+            --bg-light: #e0f7fa;
+            /* Light Water Background */
+            --white: #ffffff;
+            --text-dark: #37474f;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #b2ebf2;
+            --nav-hover-bg: #b2ebf2;
+            --card-bg: #e0f7fa;
+            --flow-border: var(--primary);
+            --card-border: var(--secondary);
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/11.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Crops</a>
+            <a href="#layout">2. Pond Position</a>
+            <a href="#cycle">3. Fertigation Flow</a>
+            <a href="#calendar">4. Irrigation Calendar</a>
+            <a href="#risks">5. Risks & Algae</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Aquaculture-Agriculture</h1>
+            <p>The "Fertigation" Model: Using nutrient-rich fish pond water to irrigate and fertilize crops.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Pre-requisites</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💧 Water Source</h3>
+                    <p><strong>Consistent Supply.</strong><br>
+                        This model relies on water exchange. You need enough water to fill the pond and refill it after
+                        pumping 10-20% out for the crops daily.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🥬 Crop Selection</h3>
+                    <p><strong>Leafy Greens.</strong><br>
+                        Spinach, Kale, and Lettuce thrive on the high-nitrogen water from fish ponds. Orchards
+                        (Banana/Papaya) also respond very well.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🐟 Fish Species</h3>
+                    <p><strong>Hardy Breeds.</strong><br>
+                        Catfish and Tilapia are ideal because they can tolerate fluctuating water levels and
+                        produce high waste (rich fertilizer).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The layout must facilitate the movement of water from the pond to the field and back (optional).</p>
+
+            <img src="../images/Pond_Irrigation_Layout.jpg" alt="Pond Irrigation Layout" class="content-img">
+
+            <div style="background: #e0f2f1; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Gravity Flow:</strong> Ideally, place the fish pond at a higher elevation
+                        than the crop fields so water flows down without pumps.</li>
+                    <li><strong>Silt Trap:</strong> Install a simple mesh filter at the pond outlet to stop large fish
+                        waste solids from clogging drip lines.</li>
+                    <li><strong>Drainage:</strong> Ensure crop fields have drainage channels that can route excess water
+                        to a bio-filter or secondary pond.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Fish excretion is essentially liquid Ammonia/Nitrate fertilizer. We treat the pond as a "Liquid Compost
+                Pit".</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🐟</span>
+                    <strong>Fish Waste</strong>
+                    <p>Ammonia & Nitrates</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🚿</span>
+                    <strong>Irrigation</strong>
+                    <p>Pumped to Field</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌾</span>
+                    <strong>Crops</strong>
+                    <p>Absorb Nutrients</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🔄</span>
+                    <strong>Refill</strong>
+                    <p>Fresh Water to Pond</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Water management is the key operational task here.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Daily: Morning Flush</div>
+                    <p>Pump out 10% of the pond bottom water (sludge rich). Direct this to fruit trees or high-demand
+                        crops.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Daily: Top Up</div>
+                    <p>Refill the pond with fresh water. This improves oxygen for fish while stimulating their appetite.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Weekly: Filter Clean</div>
+                    <p>Check the irrigation filters. Fish water contains algae which can clog drip tapes quickly.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Seasonally: Desilting</div>
+                    <p>Once a year, drain the pond completely. Scrape the bottom sludge—this is "Black Gold" fertilizer
+                        for preparing vegetable beds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ RISK: CLOGGING</h3>
+                <p><strong>Algae Blockage.</strong> Fish water is full of algae. If you use standard Drip Irrigation, it
+                    will clog in days. <strong>Solution:</strong> Use "Flood Irrigation" or specialized "Button
+                    Drippers" that can be cleaned.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Salinity Buildup</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Rare in freshwater, but possible. Test soil
+                        EC (Electrical Conductivity) monthly.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Over-Fertilization</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Crops look "burnt". Dilute pond water with
+                        fresh water before irrigating.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Cost Savings</h3>
+                    <ul>
+                        <li><strong>Fertilizer:</strong> Reduced by 100% for Nitrogen needs. Fish water is usually
+                            sufficient.</li>
+                        <li><strong>Water Efficiency:</strong> Every drop serves two purposes (Fish home & Plant drink).
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📈 Revenue</h3>
+                    <ul>
+                        <li><strong>Organic Premium:</strong> Crops grown without chemical fertilizers fetch higher
+                            prices.</li>
+                        <li><strong>Fish Sales:</strong> A high-protein bonus crop harvested every 6 months.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

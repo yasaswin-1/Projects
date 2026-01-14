@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice-Fish-Duck Ecosystem Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #2e7d32;
+            /* Forest Green */
+            --secondary: #0277bd;
+            /* Deep Water Blue */
+            --accent: #fbc02d;
+            /* Golden Yellow */
+            --bg-light: #f4f6f8;
+            /* Light Grey Background */
+            --white: #ffffff;
+            --text-dark: #263238;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #e0e0e0;
+            --nav-hover-bg: #e8f5e9;
+            --card-bg: #f8f9fa;
+            --flow-border: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/1.jpg' 
+               Ensure you have a folder named 'images' with '1.jpg' inside it.
+            */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                url('../images/1.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Soil</a>
+            <a href="#layout">2. Layout & Design</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Risks & Solutions</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Rice-Fish-Duck Ecosystem</h1>
+            <p>A zero-waste operational manual. Turn one acre into three income streams.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Pre-requisites</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌱 Soil Requirement</h3>
+                    <p><strong>Clay Soil is Mandatory.</strong><br>
+                        You must have soil that retains water. Sandy soil drains too fast for the fish trenches and
+                        refuge ponds.</p>
+                </div>
+                <div class="info-card">
+                    <h3>💧 Water Security</h3>
+                    <p><strong>Must be Irrigated.</strong><br>
+                        Rain-fed fields are too risky. You need a reliable water source to maintain levels for fish
+                        during dry spells.</p>
+                </div>
+                <div class="info-card">
+                    <h3>📏 Land Area</h3>
+                    <p><strong>Min: 1 Hectare (2.5 Acres).</strong><br>
+                        Below this size, the cost of digging trenches and fencing makes the project economically
+                        unviable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The design relies on gravity and fish behavior. The "Refuge Pond" is the safety zone.</p>
+
+            <img src="../images/Field_Layout.jpg" alt="Field Layout" class="content-img">
+
+            <div
+                style="background: #e3f2fd; padding: 20px; border-radius: 8px; border-left: 5px solid var(--secondary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Refuge Pond:</strong> Dig a 1m deep pond at the lowest corner (10% of field area).</li>
+                    <li><strong>Trenches:</strong> 0.5m deep channels connecting the pond to the rest of the field.</li>
+                    <li><strong>Duck Housing:</strong> Build directly OVER the pond with slatted floors so manure falls
+                        into water.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Why no fertilizer? Because the system feeds itself.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🦆</span>
+                    <strong>Ducks</strong>
+                    <p>Manure drops into water</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🦠</span>
+                    <strong>Plankton</strong>
+                    <p>Algae blooms from manure</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐟</span>
+                    <strong>Fish</strong>
+                    <p>Eat plankton & pests</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌾</span>
+                    <strong>Rice</strong>
+                    <p>Absorbs fish waste</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 0: Planting</div>
+                    <p>Transplant rice seedlings. Keep water low (5cm). <strong>No animals yet.</strong></p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 15: Fish Release</div>
+                    <p>Roots are established. Increase water to 15cm. Release fish fingerlings.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 20: Duck Release</div>
+                    <p>Rice stems are strong enough. Release ducklings. Start daily grazing.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time" style="color: #d32f2f;">Day 90: CRITICAL STOP</div>
+                    <p><strong>Remove Ducks Immediately.</strong> Rice is flowering. Ducks will eat the grain if left in
+                        the field.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 120: Harvest</div>
+                    <p>Drain the field. Fish retreat to the deep refuge pond. Harvest rice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ CRITICAL: NO CHEMICALS</h3>
+                <p><strong>Do not use chemical pesticides.</strong> The water is shared. Pesticides safe for rice will
+                    kill your fish and ducks instantly. Use neem oil or let the ducks eat the pests.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Fish gasping at surface</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Low Oxygen. Stop duck manuring & add fresh
+                        water.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Rice plants uprooted</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Ducks released too early. Wait until Day 20.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Cost Savings</h3>
+                    <ul>
+                        <li>Fertilizer: <strong>$0</strong> (Replaced by manure)</li>
+                        <li>Pesticide: <strong>$0</strong> (Replaced by ducks)</li>
+                        <li>Weeding Labor: <strong>-90%</strong> (Ducks eat weeds)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📈 Income Streams</h3>
+                    <ul>
+                        <li><strong>Rice:</strong> 10-15% higher yield due to aeration.</li>
+                        <li><strong>Fish:</strong> Sold at end of season.</li>
+                        <li><strong>Eggs:</strong> Daily income from ducks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

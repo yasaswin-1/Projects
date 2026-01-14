@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat-Agroforestry Dryland Ecosystem Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #795548;
+            /* Earthy Brown */
+            --secondary: #689f38;
+            /* Olive/Dry Green */
+            --accent: #ff6f00;
+            /* Amber/Sun */
+            --bg-light: #efebe9;
+            /* Light Beige Background */
+            --white: #ffffff;
+            --text-dark: #3e2723;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #d7ccc8;
+            --nav-hover-bg: #d7ccc8;
+            --card-bg: #f1f8e9;
+            --card-border: var(--primary);
+            --flow-border: var(--secondary);
+            --timeline-dot-bg: var(--secondary);
+            --timeline-time-color: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/7.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/7.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Fodder</a>
+            <a href="#layout">2. Housing & Trees</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Disease & Risks</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Crop-Goat-Agroforestry</h1>
+            <p>The "Dryland ATM" Model: Ensuring survival and profit even in drought-prone regions.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Pre-requisites</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌾 Fodder Banks</h3>
+                    <p><strong>Drought Insurance.</strong><br>
+                        You must dedicate land to drought-resistant grasses like Napier or Stylo. These act as "Fodder
+                        Banks" to feed goats when rain fails.</p>
+                </div>
+                <div class="info-card">
+                    <h3>💧 Water Harvesting</h3>
+                    <p><strong>Farm Ponds.</strong><br>
+                        Since this is a dryland model, you must build swales or bunds to catch every drop of rain.
+                        Rain-fed crops depend on this stored soil moisture.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🐐 Goat Breed</h3>
+                    <p><strong>Hardy Breeds.</strong><br>
+                        Select breeds that thrive in harsh heat and can eat diverse vegetation, such as Boer or local
+                        hardy varieties.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The layout focuses on protecting the crops from goats while allowing trees to protect the soil.</p>
+
+            <img src="../images/Goat_and_Agroforestry_Layout.jpg" alt="Goat and Agroforestry Layout"
+                class="content-img">
+
+            <div
+                style="background: #e3f2fd; padding: 20px; border-radius: 8px; border-left: 5px solid var(--secondary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Elevated Housing:</strong> Build goat sheds on raised platforms (slatted floors). This
+                        prevents foot rot and pneumonia caused by damp ground.</li>
+                    <li><strong>Alley Cropping:</strong> Plant crops in "alleys" between rows of trees. The trees act as
+                        windbreaks and prevent soil erosion.</li>
+                    <li><strong>Fencing:</strong> Strong perimeter fencing is mandatory. Goats are notorious escape
+                        artists and will destroy your main crop if loose.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Goats convert "waste" (crop residue) into "gold" (manure) for the poor dryland soil.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🌾</span>
+                    <strong>Crop Residue</strong>
+                    <p>Stalks/Leaves after harvest</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐐</span>
+                    <strong>Goats</strong>
+                    <p>Graze on Residue & Trees</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">💩</span>
+                    <strong>Goat Manure</strong>
+                    <p>Rich Fertilizer</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌳</span>
+                    <strong>Trees & Soil</strong>
+                    <p>Manure restores Soil Health</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Managing the "Gap" periods (dry seasons) is the secret to success in this model.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Rainy Season: Planting</div>
+                    <p>Sow main crops. Goats are kept in the shed or grazed on wasteland, NOT in the main field.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">End of Rains: Silage Making</div>
+                    <p>Harvest excess green fodder and preserve it as Silage/Hay. This is your food stock for the
+                        upcoming dry summer.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Dry Season: Grazing</div>
+                    <p>Crops are harvested. Release goats into the field to graze on stubble/residue. This cleans the
+                        field for next year.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Late Summer: Tree Pruning</div>
+                    <p>Prune tree branches. Feed leaves to goats. The pruning allows sunlight to reach the ground for
+                        the next crop cycle.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ RISK: CROP DESTRUCTION</h3>
+                <p><strong>Goats eat everything.</strong> If goats enter the field while crops are young, they will wipe
+                    out the harvest in hours. Maintain fences daily.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Foot Rot Disease</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Caused by wet ground. Use Elevated Platform
+                        housing.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Fodder Shortage</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Use tree leaves (Agroforestry) and stored
+                        Silage during droughts.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Liquid Assets</h3>
+                    <ul>
+                        <li><strong>Goats (The ATM):</strong> Can be sold instantly whenever cash is needed. High demand
+                            for meat (Chevon).</li>
+                        <li><strong>Timber/Fruit:</strong> Agroforestry trees provide long-term lump sum income (timber)
+                            or seasonal fruit.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>🛡️ Resilience</h3>
+                    <ul>
+                        <li><strong>Crop Failure:</strong> If rains fail and crops die, feed the dried crop to goats.
+                            You still get income from the animals.</li>
+                        <li><strong>Soil Value:</strong> Trees prevent topsoil erosion, maintaining land value over
+                            decades.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

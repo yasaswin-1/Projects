@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy-Sericulture-Biogas Ecosystem Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #7b1fa2;
+            /* Mulberry Purple */
+            --secondary: #689f38;
+            /* Leaf Green */
+            --accent: #fdd835;
+            /* Silk/Cocoon Gold */
+            --bg-light: #f3e5f5;
+            /* Light Purple Tint */
+            --white: #ffffff;
+            --text-dark: #212121;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #e1bee7;
+            --nav-hover-bg: #f3e5f5;
+            --card-bg: #f1f8e9;
+            --flow-border: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/5.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/5.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Mulberry</a>
+            <a href="#layout">2. Rearing House</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Rearing Calendar</a>
+            <a href="#risks">5. Hygiene & Risks</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Dairy-Sericulture-Biogas</h1>
+            <p>High-Value Diversification: Combining milk production with the "Queen of Textiles" (Silk).</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Pre-requisites</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌿 Mulberry Garden</h3>
+                    <p><strong>Loamy Soil.</strong><br>
+                        You need dedicated land for Mulberry cultivation. The soil must be deep, fertile, and
+                        well-drained. The leaves feed the silkworms.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🌡️ Micro-Climate</h3>
+                    <p><strong>Cool & Humid.</strong><br>
+                        Silkworms are sensitive. The rearing house requires a temperature of 24-28°C and humidity of
+                        70-85%. Hot, dry regions need humidifiers.</p>
+                </div>
+                <div class="info-card">
+                    <h3>👨‍🌾 Labor Intensive</h3>
+                    <p><strong>Skilled Labor.</strong><br>
+                        Unlike crops, silkworms need feeding 4 times a day during the rearing cycle. Ensure you have the
+                        manpower available.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The system links the dairy unit (waste source) to the mulberry garden (nutrient sink) and the rearing
+                house (profit center).</p>
+
+            <img src="../images/Sericulture_Farm_Layout.jpg" alt="Sericulture Farm Layout" class="content-img">
+
+            <div
+                style="background: #e3f2fd; padding: 20px; border-radius: 8px; border-left: 5px solid var(--secondary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Rearing House:</strong> Must be separate from the cattle shed to prevent fly
+                        contamination. Windows must have wire mesh to stop uzi flies.</li>
+                    <li><strong>Biogas Unit:</strong> Connected to the cattle shed. The slurry outlet should lead
+                        directly to the Mulberry irrigation channel.</li>
+                    <li><strong>Shoot Racks:</strong> Wooden or bamboo racks inside the rearing house to hold the
+                        silkworms.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Biogas slurry creates lush mulberry leaves, which leads to higher quality silk cocoons.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🐄</span>
+                    <strong>Dairy Cows</strong>
+                    <p>Provide Dung</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">⚡</span>
+                    <strong>Biogas Slurry</strong>
+                    <p>Liquid Fertilizer</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🍃</span>
+                    <strong>Mulberry</strong>
+                    <p>Rapid Leaf Growth</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐛</span>
+                    <strong>Silkworms</strong>
+                    <p>Produce Silk Cocoons</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Silkworm rearing happens in "Batches" (usually 5-6 per year). This fits perfectly between daily dairy
+                tasks.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 1-30: Garden Prep</div>
+                    <p>Apply Biogas slurry to Mulberry garden. Prune branches to stimulate fresh leaf growth.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 31: Brushing</div>
+                    <p>Receive silkworm eggs (DFLs) from the grainage center. "Brush" (transfer) tiny larvae onto fresh
+                        leaves.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 32-55: Rearing</div>
+                    <p>Feed larvae chopped mulberry leaves 3-4 times daily. Clean the bed (remove waste) every 2 days.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 56-60: Mounting</div>
+                    <p>Worms stop eating and look for a spot to spin. Transfer them to "Mountages" (Chandrike) to spin
+                        cocoons.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 65: Harvest & Market</div>
+                    <p>Harvest the golden cocoons. Transport to the silk market immediately before the moth emerges.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ HYGIENE ALERT</h3>
+                <p><strong>Silkworms are fragile.</strong> Do not enter the rearing house after visiting the cattle shed
+                    without washing hands/feet. Disinfect the house with Bleaching Powder before every batch.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Uzi Fly Attack</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Parasitic flies kill worms. Keep windows
+                        meshed. Use Uzi traps.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Low Leaf Yield</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Soil nutrient deficiency. Increase Biogas
+                        slurry application.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 High Value Cash Crop</h3>
+                    <ul>
+                        <li><strong>Silk Cocoons:</strong> Sold per KG. High market value compared to standard crops.
+                        </li>
+                        <li><strong>Milk:</strong> Provides steady daily cash flow to support the farm while waiting for
+                            the silk batch.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📉 Input Reduction</h3>
+                    <ul>
+                        <li><strong>Fertilizer:</strong> Biogas slurry reduces fertilizer cost for Mulberry by 40%.</li>
+                        <li><strong>Fuel:</strong> Biogas saves household cooking costs.</li>
+                        <li><strong>Litter Reuse:</strong> Silkworm waste (litter) is high-protein feed for fish (if you
+                            have a pond).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

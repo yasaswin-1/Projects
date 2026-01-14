@@ -1,0 +1,10 @@
+for Fedora and RedHat based linux distributions
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+ctrl+c
+    to stop
+deactivate
+rm -r venv (for delleting venv(not recommended))
+    # If your virtual environment is in a directory called 'venv':

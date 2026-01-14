@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGuard AI - Plant Disease Expert</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --dark-green: #1b5e20;
+            --light-green: #e8f5e9;
+            --accent-yellow: #fbc02d;
+            --glass-bg: rgba(255, 255, 255, 0.92);
+            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../static/IFS/images/indexBackground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* --- CONTAINER STYLE --- */
+        .container {
+            max-width: 900px;
+            margin: 40px auto 80px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            position: relative;
+        }
+
+        h1 {
+            color: var(--primary-green);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* --- UPLOAD AREA --- */
+        .upload-area {
+            border: 3px dashed var(--primary-green);
+            background: rgba(232, 245, 233, 0.6);
+            padding: 3rem;
+            text-align: center;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            background: rgba(232, 245, 233, 0.9);
+            transform: translateY(-2px);
+        }
+
+        #image-preview {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            display: none;
+            margin: 20px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- BUTTONS --- */
+        .btn-analyze {
+            background: var(--primary-green);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            display: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .btn-analyze:hover {
+            background: var(--dark-green);
+            transform: translateY(-2px);
+        }
+
+        /* --- FLOATING BUTTONS --- */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            cursor: pointer;
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Explore Button (Left) */
+        .btn-explore {
+            left: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--primary-green);
+            border: 2px solid var(--primary-green);
+        }
+
+        /* Chat Button (Right) */
+        .btn-chat {
+            right: 30px;
+            background: var(--primary-green);
+            color: white;
+            border: 2px solid var(--primary-green);
+        }
+
+        /* --- HIDE DEFAULT CHATBASE BUBBLE --- */
+        #chatbase-bubble-button {
+            display: none !important;
+        }
+
+        /* --- GOOGLE TRANSLATE --- */
+        .translate-wrapper {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .goog-te-gadget-simple {
+            background-color: white !important;
+            border: 1px solid #ddd !important;
+            padding: 6px 10px !important;
+            border-radius: 20px !important;
+            font-size: 13px !important;
+        }
+
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
+
+        /* --- RESULTS GRID --- */
+        #result-section {
+            display: none;
+            margin-top: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-btn span {
+                display: none;
+            }
+
+            .floating-btn {
+                padding: 15px;
+                border-radius: 50%;
+            }
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary-green);
+        }
+
+        .card-chem {
+            border-left-color: #e53935;
+        }
+
+        .card-natural {
+            border-left-color: #43a047;
+        }
+
+        .card-farming {
+            border-left-color: var(--accent-yellow);
+            background: #fffde7;
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .ifs-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: var(--accent-yellow);
+            color: #333;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .ifs-btn:hover {
+            background: #f9a825;
+            transform: scale(1.05);
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-green);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="../static/IFS/IFS_Home.html" class="floating-btn btn-explore">
+        <i class="fas fa-compass fa-lg"></i>
+        <span>Explore Farming Systems</span>
+    </a>
+
+    <a href="#" class="floating-btn btn-chat" onclick="toggleChat(); return false;">
+        <i class="fas fa-comments fa-lg"></i>
+        <span>Chat Expert</span>
+    </a>
+
+    <div class="container">
+
+        <div class="translate-wrapper">
+            <div id="google_translate_element"></div>
+        </div>
+
+        <h1><i class="fas fa-leaf"></i> AgriGuard AI</h1>
+        <p class="subtitle">Advanced Plant Disease Diagnosis & Integrated Solutions</p>
+
+        <div class="upload-area" id="drop-area">
+            <i class="fas fa-cloud-upload-alt" style="font-size: 4rem; color: #2e7d32; margin-bottom: 15px;"></i>
+            <h3>Click to Upload Plant Image</h3>
+            <p style="color: #888; font-size: 0.9rem;">Supports: JPG, PNG, JPEG</p>
+            <input type="file" id="file-input" hidden accept="image/*">
+        </div>
+
+        <img id="image-preview">
+        <button class="btn-analyze" id="analyze-btn">Diagnose Crop</button>
+        <div class="loader" id="loader"></div>
+
+        <div id="result-section"></div>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,te,hi', /* Only English, Telugu, Hindi */
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        const fileInput = document.getElementById('file-input');
+        const preview = document.getElementById('image-preview');
+        const analyzeBtn = document.getElementById('analyze-btn');
+        const resultSection = document.getElementById('result-section');
+        const loader = document.getElementById('loader');
+
+        document.getElementById('drop-area').addEventListener('click', () => fileInput.click());
+
+        fileInput.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                    analyzeBtn.style.display = 'block';
+                    resultSection.style.display = 'none';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        analyzeBtn.addEventListener('click', async () => {
+            const file = fileInput.files[0];
+            loader.style.display = 'block';
+            analyzeBtn.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/diagnose', { method: 'POST', body: formData });
+                const data = await response.json();
+
+                if (data.error) throw new Error(data.error);
+                renderResults(data);
+            } catch (err) {
+                alert("Error: " + err.message);
+            } finally {
+                loader.style.display = 'none';
+                analyzeBtn.style.display = 'block';
+            }
+        });
+
+        function renderResults(data) {
+            const d = data.details;
+            const renderList = (items) => items.length ? items.map(i => `<li>${i}</li>`).join('') : '<li>None listed</li>';
+
+            const html = `
+                <div style="text-align:center; padding-bottom: 20px; border-bottom: 2px solid #eee; margin-bottom: 20px;">
+                    <h2 style="color:#2e7d32; font-size: 2rem; margin: 0;">${d.name}</h2>
+                    <span style="background: #e8f5e9; color: #2e7d32; padding: 5px 15px; border-radius: 15px; font-weight: bold; font-size: 0.9rem;">
+                        Confidence: ${data.confidence}
+                    </span>
+                    <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.6;">${d.description}</p>
+                </div>
+                
+                <div class="grid-container">
+                    <div class="info-card">
+                        <h3><i class="fas fa-search-plus"></i> Symptoms</h3>
+                        <ul>${renderList(d.symptoms)}</ul>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-shield-alt"></i> Prevention</h3>
+                        <ul>${renderList(d.prevention)}</ul>
+                    </div>
+                    <div class="info-card card-natural">
+                        <h3><i class="fas fa-leaf"></i> Natural Control</h3>
+                        <ul>${renderList(d.natural_control)}</ul>
+                    </div>
+                    <div class="info-card card-chem">
+                        <h3><i class="fas fa-skull-crossbones"></i> Chemical Control</h3>
+                        <ul>${renderList(d.chemical_control)}</ul>
+                    </div>
+
+                    <div class="info-card card-farming">
+                        <h3><i class="fas fa-tractor"></i> Integrated Farming Suggestion</h3>
+                        <p style="font-size: 1.2rem; font-weight: bold; color: #f57f17;">${d.integrated_farming}</p>
+                        <p>Integrate this crop with livestock or other systems to maximize sustainability.</p>
+                        
+                        <a href="${d.ifs_link}" class="ifs-btn" target="_blank">
+                            View IFS Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+            resultSection.innerHTML = html;
+            resultSection.style.display = 'block';
+            resultSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "gM0CtmvcbzWS8KZNocDxI"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    <!--
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "j_rL7yEry2TPR-SRIa3rf"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    -->
+    <script>
+        let chatState = false;
+        function toggleChat() {
+            if (!chatState) {
+                window.chatbase("open");
+                chatState = true;
+            } else {
+                window.chatbase("close");
+                chatState = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

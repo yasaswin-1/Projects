@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice-Fish-Mushroom Ecosystem Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #5d4037;
+            /* Earthy Brown for Mushrooms */
+            --secondary: #388e3c;
+            /* Crop Green */
+            --accent: #ffab00;
+            /* Amber/Gold */
+            --bg-light: #f4f6f8;
+            /* Light Grey Background */
+            --white: #ffffff;
+            --text-dark: #263238;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #e0e0e0;
+            --nav-hover-bg: #efebe9;
+            --card-bg: #f8f9fa;
+            --flow-border: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/2.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                url('../images/2.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Prerequisites</a>
+            <a href="#layout">2. Layout & Sheds</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Risks & Solutions</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Rice-Fish-Mushroom Ecosystem</h1>
+            <p>A value-addition model: Convert farm waste (straw) into super-food and fish feed.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Pre-requisites</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌾 Straw Availability</h3>
+                    <p><strong>Primary Input.</strong><br>
+                        Success depends on abundant rice straw availability. You need fresh straw from your own harvest
+                        or neighbors to create mushroom substrate.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🌡️ Climate Control</h3>
+                    <p><strong>Cool & Humid.</strong><br>
+                        Mushrooms require high humidity (80-90%) and temperatures between 20-28°C. A shaded area near
+                        the field is required for the shed.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🏗️ Infrastructure</h3>
+                    <p><strong>Thatched Sheds.</strong><br>
+                        You do not need heavy construction. Simple bamboo sheds with thatched roofs provide the perfect
+                        ventilation for mushroom spawn running.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The layout integrates a vertical component (mushrooms) with the horizontal wetland (rice/fish).</p>
+
+            <img src="../images/Mushroom_Shed_Layout.jpg" alt="Mushroom Shed Layout" class="content-img">
+
+            <div
+                style="background: #e3f2fd; padding: 20px; border-radius: 8px; border-left: 5px solid var(--secondary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Mushroom Shed:</strong> Build near the pond dyke. Size: 5m x 10m for 500 bags.</li>
+                    <li><strong>Pond:</strong> Standard fish pond design (min 1.5m deep).</li>
+                    <li><strong>Sterilization Area:</strong> A designated spot for boiling/steaming rice straw before
+                        bagging.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>This model creates value from "waste". Rice straw is burned by many farmers; here, it becomes food.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🌾</span>
+                    <strong>Rice Harvest</strong>
+                    <p>Produces tons of straw</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🍄</span>
+                    <strong>Mushrooms</strong>
+                    <p>Grow on straw substrate</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">♻️</span>
+                    <strong>Spent Compost</strong>
+                    <p>Waste after harvest</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐟</span>
+                    <strong>Fish</strong>
+                    <p>Eat compost as protein</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Mushroom cycles are short (45 days), allowing 3 cycles per 1 rice season.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 1: Straw Prep</div>
+                    <p>Collect fresh straw. Chop into 2-inch pieces. Soak in water and sterilize (boil/steam).</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 2: Spawning</div>
+                    <p>Layer straw and mushroom spawn (seeds) into plastic bags. Hang bags in the dark shed.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 25: First Harvest</div>
+                    <p>Pinheads appear. Harvest mature mushrooms daily for the next 15 days.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 45: Recycling</div>
+                    <p><strong>Bag Exhausted.</strong> The straw is now "Spent Mushroom Compost" (SMC). Dump this into
+                        the fish pond.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 46: Fish Feeding</div>
+                    <p>Fish consume the protein-rich compost. Leftover compost settles and fertilizes the pond bottom.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #fff3e0; border: 2px solid #ffb74d; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #e65100;">⚠️ HYGIENE ALERT</h3>
+                <p><strong>Contamination is the enemy.</strong> Mushroom bags can easily get infected by green mold
+                    (Trichoderma). Always wash hands and sterilize straw properly.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Green Mold in Bags</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Remove infected bags immediately. Do not
+                        feed to fish. Burn/Bury.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Fish water too murky</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Over-dumping of compost. Stop feeding for 3
+                        days.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Cash Flow</h3>
+                    <ul>
+                        <li><strong>Rice:</strong> Income once every 4-5 months.</li>
+                        <li><strong>Fish:</strong> Income once every 6-8 months.</li>
+                        <li><strong>Mushrooms:</strong> <strong>Weekly Income.</strong> This provides daily cash for
+                            household expenses.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📈 Value Addition</h3>
+                    <ul>
+                        <li><strong>Straw Value:</strong> Increases from $0 (waste) to high value (substrate).</li>
+                        <li><strong>Feed Savings:</strong> Reduced fish feed cost by 30% using spent compost.</li>
+                        <li><strong>Dried Mushrooms:</strong> Unsold fresh mushrooms can be dried for long-term storage.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
