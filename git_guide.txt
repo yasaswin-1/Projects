@@ -1,0 +1,121 @@
+Git:-  free and open source version control system
+       tools that helps to track changes in code
+       ->track history
+       ->help to colloborate
+
+GitHub:- online website to host repositories
+
+github:-  code changes -> commit
+git:-  code changes -> add -> commit -> push
+
+git --version
+
+Configuring git
+    git config --global user.name "yasaswin-1"
+    git config --global user.email "saiyasaswin@gmail.com"
+
+git details
+    git config --list
+    git config user.name
+    git config user.email
+
+https://github.com/yasaswin-1/DSA_Repository.git
+list hidden files
+    ls -a
+    ls -la
+
+Basic commands
+add
+->adds new or changed files in your working directory to the git staging area
+    git add filename.type
+         git add "add SubsetsBacktracking.java"
+        for adding single files one by one (untracked->staged)
+    gid add .
+        for add all files (untracked->staged)
+commit
+->it is the record of change
+    git commit -m "some message"
+        git commit -m "add SubsetsBacktracking.java"
+push
+->upload local repo content to remote repo
+    git push origin main
+
+Pull
+->used to fetch and download content from a remote repo and immediately update the local repo to match that content
+    git pull origin main
+        (checkout to required branch and then pull)
+
+init
+->used to create a new git repo
+    git init
+        (used to make a local repo as git repo by initialising .git file)
+    git remote add origin <-link->
+    git remote -v (to verify remote)
+    git branch (to check branch)
+    git branch -M main (to rename branch)
+    git push origin main
+
+Branch Commands
+    git branch
+        (to check branch)
+    git branch -M main
+        (to rename branch)
+    git checkout <- branch name ->
+        (to navigate)
+    git checkout -b <- new branch name ->
+        (to create new branch)
+    git branch -d <- branch name ->
+        (to delete branch)
+    git push --set-upstream origin <- branch name ->
+        (manditatory to set for new branch)
+
+Merging Code
+    git diff <- branch name ->
+        (to compare commits, branches, files & more)
+    gir mrege <- branch name ->
+        (to merge 2 branches)
+        or
+        Create a PR (pull request) -> Merge PR -> Confirm Merge (commit) -> Delete the merged branch (as we merged it with main)
+Pull Request:- it lets you tell others about changes you've pushed to a branch in a repository on github
+
+Commit and Merge
+    git commit -m "merge man" merge with <- other branch name (feature) ->
+
+Ignore Files/Folders
+    create " .ignore " folder
+        write files/folders names in it
+            example
+              /*
+                 .gitignore/
+                 ->  __pycache__
+                     linuxvenv
+                     winvenv
+                     chatbot_data.json
+                     plant_disease_app.zip
+                     temp.html
+              */
+
+Large Files Upload
+git lfs
+    sudo dnf install git lfs
+    git lfs install
+    git lfs track "LagreFile.mkv"
+        (LargeFile.mkv is Large File)
+    git add .
+    git status
+    git commit -m "add Large File"
+    git push origin main
+
+Fixing Mistakes
+    Case 1: staged changes
+        git reset <- file name ->
+        git reset
+    Case 2: commited changes (for one commit)
+        git reset HEAD~1
+    Case 3: commited changes (for many commits)
+        git reset <- commit hash ->
+        git reset --hard <- commit hash ->
+
+What is Forking
+    A fork is a new repository that shares code and visibility settings with the original "upstream" repository.
+    Fork is a rough copy.
