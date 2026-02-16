@@ -265,11 +265,12 @@
         <i class="fas fa-compass fa-lg"></i>
         <span>Explore Farming Systems</span>
     </a>
-
+    <!--
     <a href="#" class="floating-btn btn-chat" onclick="toggleChat(); return false;">
         <i class="fas fa-comments fa-lg"></i>
         <span>Chat Expert</span>
-    </a>
+    </a> 
+    -->
 
     <div class="container">
 
@@ -398,14 +399,36 @@
             resultSection.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
+
+    <!-- Chatbase Embed Script -->
+ <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '69647cf27c7984b9e705b1d9' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
+    <!--
     <script>
         (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "gM0CtmvcbzWS8KZNocDxI"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
     </script>
+    -->
     <!--
     <script>
         (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "j_rL7yEry2TPR-SRIa3rf"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
     </script>
     -->
+    <!--
     <script>
         let chatState = false;
         function toggleChat() {
@@ -418,7 +441,7 @@
             }
         }
     </script>
-
+    -->
 </body>
 
 </html>
