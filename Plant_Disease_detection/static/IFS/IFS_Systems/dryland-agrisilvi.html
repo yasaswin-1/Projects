@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Silviculture Ecosystem Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #5d4037;
+            /* Wood/Timber Brown */
+            --secondary: #689f38;
+            /* Canopy Green */
+            --accent: #8d6e63;
+            /* Earthy Accent */
+            --bg-light: #efebe9;
+            /* Light Wood Background */
+            --white: #ffffff;
+            --text-dark: #3e2723;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #d7ccc8;
+            --nav-hover-bg: #d7ccc8;
+            --card-bg: #f1f8e9;
+            --flow-border: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/8.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/8.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Species</a>
+            <a href="#layout">2. Alley Cropping</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Risks & Shade</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Agri-Silviculture</h1>
+            <p>The "Two-Story" Farm: Growing timber in the sky and crops on the ground.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Species Selection</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌳 Tree Selection</h3>
+                    <p><strong>Deep Rooted.</strong><br>
+                        Select trees with deep taproots (e.g., Teak, Melia dubia) so they don't compete with crops for
+                        surface water. Avoid surface feeders.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🌾 Crop Compatibility</h3>
+                    <p><strong>Shade Tolerance.</strong><br>
+                        During the early years, you can grow any crop. As trees mature, switch to shade-loving crops
+                        like Turmeric, Ginger, or Coffee.</p>
+                </div>
+                <div class="info-card">
+                    <h3>☀️ Orientation</h3>
+                    <p><strong>East-West Rows.</strong><br>
+                        Plant tree rows from East to West. This minimizes the shadow cast on the crops during the day,
+                        maximizing photosynthesis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The classic design is "Alley Cropping": wide alleys of sunlight for crops, narrow strips for trees.</p>
+
+            <img src="../images/Alley_Cropping_Layout.jpg" alt="Alley Cropping Layout" class="content-img">
+
+            <div style="background: #efebe9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Spacing:</strong> Standard model is 10ft x 10ft or wide-row model 20ft (between rows) x
+                        5ft (between trees).</li>
+                    <li><strong>Alleys:</strong> The 20ft gap is the "Alley" where you plow and plant seasonal crops
+                        (Groundnut/Pulses).</li>
+                    <li><strong>Root Barriers:</strong> Dig a 2ft deep trench alongside tree rows to cut lateral roots,
+                        forcing trees to go deep.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Trees act as "Nutrient Pumps," pulling minerals from deep soil and dropping them as leaves.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🌳</span>
+                    <strong>Deep Roots</strong>
+                    <p>Pump minerals from sub-soil</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🍂</span>
+                    <strong>Leaf Litter</strong>
+                    <p>Falls & decomposes on top</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🪱</span>
+                    <strong>Humus</strong>
+                    <p>Enriches topsoil layer</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌾</span>
+                    <strong>Crops</strong>
+                    <p>Feed on enriched topsoil</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>This is a long-term game. The calendar spans years, not just months.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 1: Establishment</div>
+                    <p>Plant trees. In the wide spaces, plant sun-loving crops (Corn/Vegetables). Trees are small, so
+                        shading is zero.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 3: Canopy Management</div>
+                    <p>Trees start casting shadows. Prune lower branches (up to 50% height) to allow light and produce
+                        knot-free timber.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 5: Crop Transition</div>
+                    <p>Canopy closes in. Switch to shade-tolerant intercrops like Ginger, Turmeric, or Fodder Grass.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 10-15: Timber Harvest</div>
+                    <p>Harvest the timber. The "Lump Sum" payout. Replant trees and restart the cycle.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ RISK: ALLELOPATHY</h3>
+                <p><strong>Chemical Warfare.</strong> Some trees (like Eucalyptus or Walnut) release toxins to kill
+                    nearby plants. Never plant these with food crops. Use Nitrogen-fixers like Gliricidia or Acacia
+                    instead.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Yield Reduction (Shade)</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Aggressive pruning of tree branches. Align
+                        rows East-West.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Root Competition</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Dig trenches along tree rows to severe
+                        lateral surface roots.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 The "Pension" Plan</h3>
+                    <ul>
+                        <li><strong>Crops (Short Term):</strong> Pay for daily maintenance and living expenses.</li>
+                        <li><strong>Timber (Long Term):</strong> Acts as a "Fixed Deposit". A massive payout after 10-12
+                            years (e.g., Teak/Mahogany).</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>🛡️ Climate Shield</h3>
+                    <ul>
+                        <li><strong>Erosion Control:</strong> Tree roots hold soil during heavy rains.</li>
+                        <li><strong>Micro-Climate:</strong> Trees reduce temperature and wind speed, protecting
+                            sensitive crops from heat stress.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

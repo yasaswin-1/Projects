@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock-Crop Integration Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #d32f2f;
+            /* Poultry Red */
+            --secondary: #2e7d32;
+            /* Vegetable Green */
+            --accent: #fbc02d;
+            /* Egg Yolk / Sun */
+            --bg-light: #fff3e0;
+            /* Warm Background */
+            --white: #ffffff;
+            --text-dark: #3e2723;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #ffe0b2;
+            --nav-hover-bg: #ffe0b2;
+            --card-bg: #fff3e0;
+            --flow-border: var(--secondary);
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/10.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Ratio</a>
+            <a href="#layout">2. Chicken Tractors</a>
+            <a href="#cycle">3. Nutrient Loop</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Risks & Safety</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Livestock-Crop Integration</h1>
+            <p>The "Golden Loop": Poultry and Vegetables working in perfect harmony.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Ratios</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>⚖️ Balance Ratio</h3>
+                    <p><strong>50 Birds : 1 Acre.</strong><br>
+                        To prevent nutrient burn from excess manure, keep approximately 50 free-range chickens per acre
+                        of vegetable garden.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🥬 Crop Selection</h3>
+                    <p><strong>Heavy Feeders.</strong><br>
+                        Vegetables like Corn, Pumpkin, and Spinach love nitrogen-rich poultry manure. Root vegetables
+                        (Carrots) generally need aged manure.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🐓 Breed Choice</h3>
+                    <p><strong>Dual Purpose.</strong><br>
+                        Select breeds like Rhode Island Red or Kuroiler. They are hardy foragers, good egg layers, and
+                        provide meat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure: The "Chicken Tractor"</h2>
+            </div>
+            <p>Instead of a stationary coop, use movable pens to bring the fertilizer directly to the soil.</p>
+
+            <img src="../images/Livestock_Crop_Layout.jpg" alt="Livestock Crop Layout" class="content-img">
+
+            <div
+                style="background: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--secondary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Chicken Tractor:</strong> A floorless portable coop on wheels. Move it daily to a new
+                        patch of land.</li>
+                    <li><strong>Perimeter Fencing:</strong> Essential to keep predators (dogs/foxes) out and chickens
+                        INSIDE the designated zone.</li>
+                    <li><strong>Compost Zone:</strong> A designated area to mix excess manure with dry leaves (browns)
+                        to create stable fertilizer.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Vegetable waste feeds the birds; Bird waste feeds the vegetables.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🥬</span>
+                    <strong>Crop Waste</strong>
+                    <p>Weeds & Old Leaves</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐓</span>
+                    <strong>Poultry</strong>
+                    <p>Eat Waste & Bugs</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">💩</span>
+                    <strong>Manure</strong>
+                    <p>Rich Nitrogen Output</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌽</span>
+                    <strong>Vegetables</strong>
+                    <p>Grow Huge on Manure</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Timing is critical. Chickens are "cleaners" before planting and "gleaners" after harvest.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Pre-Planting: The Clean-Up</div>
+                    <p>Place Chicken Tractor on the garden bed 2 weeks before planting. They eat weed seeds, insect
+                        larvae, and fertilize the soil.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Planting: Exclusion</div>
+                    <p><strong>Remove Chickens.</strong> Plant your seeds/seedlings. Chickens will dig up seeds, so they
+                        must be fenced out during germination.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Growing: Insect Control</div>
+                    <p>Allow supervised "duck/chicken patrol" between wide rows (like Corn) to eat bugs, but ensure they
+                        don't peck the fruits.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Post-Harvest: The Reset</div>
+                    <p>Release the flock into the field. They eat the leftover stalks, rotten fruit, and break the pest
+                        cycle for the next season.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ RISK: "HOT" MANURE</h3>
+                <p><strong>Nitrogen Burn.</strong> Fresh poultry manure is too strong for young plants.
+                    <strong>Solution:</strong> Let manure age/compost for 3 months before applying directly to delicate
+                    crops.
+                </p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Seed Destruction</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Chickens scratch soil. Keep them off beds
+                        until plants are 6 inches tall.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Food Safety (Salmonella)</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Stop applying fresh manure 90 days before
+                        harvesting leafy greens.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Reduced Inputs</h3>
+                    <ul>
+                        <li><strong>Feed Cost:</strong> Reduced by 30% as birds forage for bugs and greens.</li>
+                        <li><strong>Fertilizer:</strong> $0 cost. Manure provides N-P-K naturally.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📈 Stacked Income</h3>
+                    <ul>
+                        <li><strong>Vegetables:</strong> Primary income. Organic veggies sell for a premium.</li>
+                        <li><strong>Eggs/Meat:</strong> Steady weekly income from the flock.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

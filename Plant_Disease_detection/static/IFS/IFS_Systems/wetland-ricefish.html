@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice-Fish Integration Ecosystem Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #0277bd;
+            /* Deep Water Blue */
+            --secondary: #558b2f;
+            /* Paddy Green */
+            --accent: #ff6f00;
+            /* Fish Orange */
+            --bg-light: #e1f5fe;
+            /* Very Light Blue Tint */
+            --white: #ffffff;
+            --text-dark: #263238;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #b3e5fc;
+            --nav-hover-bg: #b3e5fc;
+            --card-bg: #f1f8e9;
+            --flow-border: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/3.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/3.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Water</a>
+            <a href="#layout">2. Layout & Trenches</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Risks & Solutions</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Rice-Fish Integration</h1>
+            <p>The "Golden Harvest" Model: Double the yield from the same body of water.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Pre-requisites</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌱 Soil Requirement</h3>
+                    <p><strong>Heavy Clay / Loam.</strong><br>
+                        Water retention is the most critical factor. The soil must hold water for 3-4 months without
+                        seepage, otherwise, fish will be stressed by fluctuating water levels.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🧪 History Check</h3>
+                    <p><strong>Chemical Free.</strong><br>
+                        Ensure the land has not been sprayed with heavy pesticides recently. Residual toxicity in the
+                        soil can be lethal to fish fry.</p>
+                </div>
+                <div class="info-card">
+                    <h3>📏 Water Depth</h3>
+                    <p><strong>Min: 10-15 cm.</strong><br>
+                        While rice loves water, fish need slightly more depth to swim freely. You must be able to
+                        maintain at least 15cm depth in the main field.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The "Refuge Pond" is the safety net for your fish when the paddy water dries up.</p>
+
+            <img src="../images/Rice_Fish_Layout.jpg" alt="Rice Fish Layout" class="content-img">
+
+            <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Refuge Pond:</strong> Dedicate 10% of the land area to a deeper pond (1m depth) at one
+                        end.</li>
+                    <li><strong>Perimeter Trenches:</strong> Dig wide channels (1m wide, 0.5m deep) around the field
+                        edges.</li>
+                    <li><strong>Screens:</strong> Install mesh screens at water inlets and outlets to prevent fish from
+                        escaping.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Symbiosis</h2>
+            </div>
+            <p>How do they help each other? It is a biological exchange.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">🐟</span>
+                    <strong>Fish Waste</strong>
+                    <p>Excretes Ammonia & Nitrogen</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🔄</span>
+                    <strong>Movement</strong>
+                    <p>Fish swim & aerate soil</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌾</span>
+                    <strong>Rice Roots</strong>
+                    <p>Absorb Nitrogen directly</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐛</span>
+                    <strong>Pest Control</strong>
+                    <p>Fish eat stem borers & larvae</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Synchronization is key. Fish must be released only after rice plants are strong.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 0: Transplanting</div>
+                    <p>Plant rice seedlings. Keep water shallow (5cm) to encourage rooting.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 15: Flooding & Stocking.</div>
+                    <p>Increase water level to 15cm. Release fish fingerlings (Rohu, Catla). They will graze on algae
+                        and weeds.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 20 - 90: Growth Phase</div>
+                    <p>Daily maintenance. Ensure water screens are intact. Fish stir the soil, releasing nutrients for
+                        rice.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 100: Pre-Harvest Drain</div>
+                    <p>Slowly drain the main field. Fish will naturally migrate to the deeper "Refuge Pond" via
+                        trenches.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Day 110: Rice Harvest</div>
+                    <p>Harvest the rice crop. Fish can be harvested now or kept in the refuge pond to grow larger.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ DANGER: PESTICIDES</h3>
+                <p><strong>Zero Tolerance.</strong> Fish are extremely sensitive to agricultural chemicals. Even a small
+                    amount of run-off from a neighbor's field can kill your entire stock.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Fish escaping</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Heavy rain can overflow bunds. Install
+                        double-layer mesh screens.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Predators (Birds/Snakes)</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Use bird netting over the refuge pond area.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Double Income</h3>
+                    <ul>
+                        <li><strong>Rice Yield:</strong> Increases by 10-15% due to better soil aeration and organic
+                            fertilization.</li>
+                        <li><strong>Protein Income:</strong> Fish sales provide a substantial bonus income at the end of
+                            the season.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📉 Lower Costs</h3>
+                    <ul>
+                        <li><strong>Weeding:</strong> Fish eat weeds, reducing labor costs.</li>
+                        <li><strong>Pesticide:</strong> Fish eat pests, eliminating chemical costs.</li>
+                        <li><strong>Fertilizer:</strong> Fish waste replaces Urea.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

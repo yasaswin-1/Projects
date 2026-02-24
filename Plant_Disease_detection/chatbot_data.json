@@ -1,0 +1,2110 @@
+{
+  "category": "Plant Health & Disease Management",
+  "category_description": "Diagnosis, treatment, and prevention of common crop diseases using Integrated Farming principles.",
+  "diseases": [
+    {
+      "id": "Apple___Apple_scab",
+      "plant_type": "Apple",
+      "name": "Apple Scab",
+      "description": "A severe fungal disease (Venturia inaequalis) that causes dark, scabby lesions on leaves and fruit. It overwinters in fallen leaves and releases spores during spring rains.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Treat immediately to prevent fruit deformation and future yield loss."
+      },
+      "symptoms": [
+        "Olive-green velvety spots on leaves that turn black. ",
+        "Yellowing and premature dropping of leaves.",
+        "Brown, corky, scabby spots on the fruit surface. ",
+        "Fruit may crack or become misshapen."
+      ],
+      "controls": {
+        "natural": [
+          "Apply a baking soda solution (1 tbsp per gallon of water).",
+          "Spray Neem oil or compost tea during early fungal development.",
+          "Rake and destroy all fallen leaves in autumn to remove overwintering spores.",
+          "Use bio-fungicides containing Bacillus subtilis."
+        ],
+        "chemical": [
+          "Fungicides containing Myclobutanil or Captan.",
+          "Difenoconazole sprays applied at the 'green tip' stage.",
+          "Copper-based sprays before blossoming."
+        ],
+        "prevention": [
+          "Prune trees to open the canopy and improve airflow (rapid drying reduces infection).",
+          "Plant resistant varieties like Honeycrisp, Liberty, or Enterprise.",
+          "Avoid overhead irrigation."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Duckery + Apiary. Ducks forage for pests and snails in the orchard floor, reducing biological vectors, while bees ensure high pollination rates for the apple crop.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Apple___Black_rot",
+      "plant_type": "Apple",
+      "name": "Black Rot (Apple)",
+      "description": "A fungal disease (Botryosphaeria obtusa) causing leaf spots, limb cankers, and fruit rot. The fruit rot phase is often called 'Botryosphaeria rot'.",
+      "urgency": {
+        "level": "High",
+        "action": "Can destroy the entire fruit harvest and damage tree structure."
+      },
+      "symptoms": [
+        "Small, purple spots on leaves that enlarge into circular 'frog-eye' spots. ",
+        "Fruit develops a firm, brown rot that turns black.",
+        "Infected fruit shrivels into hard 'mummies' that stay on the tree.",
+        "Reddish-brown cankers on branches and limbs."
+      ],
+      "controls": {
+        "natural": [
+          "Rigorous sanitation: Remove all mummified fruit from the tree and ground.",
+          "Prune out cankers 15cm below the visible damage.",
+          "Burn pruned wood immediately (do not compost)."
+        ],
+        "chemical": [
+          "Thiophanate-methyl fungicides.",
+          "Captan or Sulfur sprays applied during the growing season."
+        ],
+        "prevention": [
+          "Keep trees healthy to resist infection (water during drought).",
+          "Protect trees from mechanical injury and insect damage.",
+          "Remove dead wood and brush piles from the orchard."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Poultry. Chickens can be grazed under apple trees (in rotation) to eat larvae and break disease cycles in leaf litter, while their manure enriches the soil phosphorus.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Apple___Cedar_apple_rust",
+      "plant_type": "Apple",
+      "name": "Cedar Apple Rust",
+      "description": "A fungal disease (Gymnosporangium juniperi-virginianae) that requires two hosts: apple trees and Eastern red cedar (juniper) trees. It cannot spread from apple to apple.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Mainly cosmetic on leaves, but severe defoliation weakens the tree."
+      },
+      "symptoms": [
+        "Bright yellow-orange 'oil spots' on the upper surface of apple leaves. ",
+        "Tiny black fungal bodies appear in the spots.",
+        "Tube-like structures on the underside of leaves release spores.",
+        "Premature leaf drop."
+      ],
+      "controls": {
+        "natural": [
+          "Remove Eastern Red Cedar trees within a 1-mile radius if possible.",
+          "Prune 'cedar galls' (brown, brain-like growths) from nearby junipers in late winter."
+        ],
+        "chemical": [
+          "Fungicides containing Myclobutanil (Immunox).",
+          "Mancozeb or Sulfur sprays applied when blossoms start to show pink."
+        ],
+        "prevention": [
+          "Plant rust-resistant apple varieties (e.g., Red Delicious, McIntosh).",
+          "Monitor nearby landscaping for juniper infections."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Apiary. Since this disease is airborne between hosts, livestock integration focuses on maintaining general tree health via bee pollination and manure fertilization from nearby cattle/goats.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Apple___healthy",
+      "plant_type": "Apple",
+      "name": "Healthy Apple Tree",
+      "description": "The tree is vigorous with glossy green leaves, no spots, and smooth bark.",
+      "urgency": {
+        "level": "Low",
+        "action": "Maintain current care routine."
+      },
+      "symptoms": [
+        "No spots.",
+        "Smooth bark."
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Mulch around the base to retain moisture.",
+          "Annual pruning in late winter.",
+          "Balanced fertilization in early spring."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: High-Density Orchard + Sheep. Sheep can graze the alleyways between apple rows (managed grazing) to control weeds and reduce mowing costs.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Blueberry___healthy",
+      "plant_type": "Blueberry",
+      "name": "Healthy Blueberry",
+      "description": "The bush is thriving with dark green foliage. Blueberries require acidic soil (pH 4.5-5.5).",
+      "urgency": {
+        "level": "Low",
+        "action": "Good condition."
+      },
+      "symptoms": [
+        "Dark green foliage."
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Test soil pH annually; add elemental sulfur if needed.",
+          "Mulch with pine needles or sawdust to maintain acidity."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Apiculture. Blueberries are highly dependent on bees for fruit set. Keeping hives nearby increases yield by up to 30%.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Cherry___Powdery_mildew",
+      "plant_type": "Cherry",
+      "name": "Powdery Mildew (Cherry)",
+      "description": "A fungal disease (Podosphaera clandestina) that covers leaves and fruit in white fungal growth, typically in warm, dry climates with high humidity.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Can deform fruit and stunt shoot growth."
+      },
+      "symptoms": [
+        "Circular white, powdery patches on leaves. ",
+        "Leaves curl upward and become distorted.",
+        "White felt-like patches on fruit.",
+        "Stunted twig growth."
+      ],
+      "controls": {
+        "natural": [
+          "Spray with a mixture of milk and water (1:10 ratio).",
+          "Potassium bicarbonate sprays.",
+          "Neem oil or horticultural oil."
+        ],
+        "chemical": [
+          "Sulfur dust or wettable sulfur.",
+          "Myclobutanil or Fenbuconazole fungicides."
+        ],
+        "prevention": [
+          "Prune to improve light penetration and air circulation.",
+          "Avoid nitrogen fertilizers late in the season (promotes susceptible tender growth).",
+          "Water at the base to avoid wetting foliage."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Vermiculture. Use cherry orchard leaf litter in worm farms to create vermicompost, which is then returned to the trees as a nutrient-rich top dressing.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Cherry___healthy",
+      "plant_type": "Cherry",
+      "name": "Healthy Cherry",
+      "description": "Vibrant green leaves without curling or spots.",
+      "urgency": {
+        "level": "Low",
+        "action": "Maintain monitoring."
+      },
+      "symptoms": [
+        "Green leaves.",
+        "No curling. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Regular watering during fruit formation.",
+          "Bird netting to protect harvest."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Orchard + Poultry. Chickens act as natural pest control for the cherry fruit fly larvae in the soil.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+      "plant_type": "Corn",
+      "name": "Gray Leaf Spot (Corn)",
+      "description": "A major fungal disease (Cercospora zeae-maydis) favored by warm, humid weather. It limits the plant's photosynthetic capacity.",
+      "urgency": {
+        "level": "High",
+        "action": "Can severely reduce yield if it reaches the ear leaf during tasseling."
+      },
+      "symptoms": [
+        "Small, pinpoint lesions surrounded by yellow halos.",
+        "Lesions elongate into rectangular, gray-to-tan spots running parallel to leaf veins. ",
+        "Entire leaves may turn gray and die (blight)."
+      ],
+      "controls": {
+        "natural": [
+          "Deep tillage to bury infected crop residue (accelerates decomposition).",
+          "Crop rotation (at least 2 years without corn)."
+        ],
+        "chemical": [
+          "Fungicides with Azoxystrobin or Pyraclostrobin.",
+          "Propiconazole applied at the onset of disease."
+        ],
+        "prevention": [
+          "Plant resistant corn hybrids (most effective method).",
+          "Manage residue in no-till systems carefully."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Dryland/Wetland Model: Agri-Silviculture (Crops + Trees). Trees act as windbreaks to reduce spore spread, while leaf litter adds organic matter.",
+        "linked_model_id": "dryland-agrisilvi"
+      }
+    },
+    {
+      "id": "Corn___Common_rust",
+      "plant_type": "Corn",
+      "name": "Common Rust (Corn)",
+      "description": "A fungal disease (Puccinia sorghi) that produces rust-colored pustules. Spores are carried by wind over long distances.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Usually manageable unless infection starts very early."
+      },
+      "symptoms": [
+        "Small, circular to elongated brown/cinnamon pustules on both leaf surfaces. ",
+        "Pustules turn black as the plant matures.",
+        "Yellowing of leaf tissue around pustules."
+      ],
+      "controls": {
+        "natural": [
+          "Usually not economically viable to treat organically in large fields.",
+          "Early planting allows corn to mature before rust spores arrive."
+        ],
+        "chemical": [
+          "Fungicides containing Mancozeb or Strobilurins.",
+          "Apply only if pustules cover significant leaf area before grain fill."
+        ],
+        "prevention": [
+          "Plant resistant hybrids.",
+          "Avoid excessive nitrogen which promotes soft, susceptible growth."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Dryland Model: Silvi-Pasture (Crop + Goat). Corn residue (stover) can be grazed by cattle or goats after harvest.",
+        "linked_model_id": "dryland-goat"
+      }
+    },
+    {
+      "id": "Corn___Northern_Leaf_Blight",
+      "plant_type": "Corn",
+      "name": "Northern Leaf Blight",
+      "description": "Caused by the fungus Exserohilum turcicum. It thrives in cool, wet weather.",
+      "urgency": {
+        "level": "High",
+        "action": "Can cause significant grain loss if upper leaves are infected early."
+      },
+      "symptoms": [
+        "Long, cigar-shaped lesions (1 to 6 inches) on leaves. ",
+        "Lesions are gray-green eventually turning tan.",
+        "Lesions may coalesce, killing whole leaves."
+      ],
+      "controls": {
+        "natural": [
+          "Bio-fungicides containing Trichoderma harzianum.",
+          "Crop rotation with non-host crops (soybeans, alfalfa)."
+        ],
+        "chemical": [
+          "Mancozeb, Propiconazole, or Pyraclostrobin.",
+          "Spray at the first sign of disease."
+        ],
+        "prevention": [
+          "Tillage to reduce surface residue.",
+          "Plant resistant varieties."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Dryland Model: Crop + Goat + Agroforestry. Goats can eat the corn stover. The manure is composted and used. Trees provide microclimate regulation.",
+        "linked_model_id": "dryland-agrisilvi"
+      }
+    },
+    {
+      "id": "Corn___healthy",
+      "plant_type": "Corn",
+      "name": "Healthy Corn",
+      "description": "Strong stalks, deep green leaves, and developing ears.",
+      "urgency": {
+        "level": "Low",
+        "action": "Monitor for pests like armyworms."
+      },
+      "symptoms": [
+        "Strong stalks."
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Maintain consistent irrigation during silking."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Wetland/Dryland: Crop + Dairy. The 'Zero Waste' model where corn feeds cattle, cattle dung generates biogas for energy, and slurry fertilizes the next corn crop.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Grape___Black_rot",
+      "plant_type": "Grape",
+      "name": "Black Rot (Grape)",
+      "description": "A devastating fungal disease (Guignardia bidwellii) attacking fruit and leaves. It thrives in warm, humid weather.",
+      "urgency": {
+        "level": "High",
+        "action": "Can cause 100% crop loss if untreated."
+      },
+      "symptoms": [
+        "Small yellowish spots on leaves with dark borders.",
+        "Fruit turns brown, soft, then shrivels into hard black 'mummies'. ",
+        "Tiny black fungal dots (pycnidia) on fruit and leaf spots."
+      ],
+      "controls": {
+        "natural": [
+          "Sanitation is key: Remove all mummies from vines and ground in winter.",
+          "Proper canopy management to increase airflow."
+        ],
+        "chemical": [
+          "Mancozeb or Ziram.",
+          "Myclobutanil (Immunox) is highly effective."
+        ],
+        "prevention": [
+          "Plant in sunny locations with good air drainage.",
+          "Weed control under vines to reduce humidity."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Vineyard + Geese/Ducks. 'Weeder Geese' manage grass and weeds without herbicides, reducing humidity around the vines which prevents Black Rot.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Grape___Esca_(Black_Measles)",
+      "plant_type": "Grape",
+      "name": "Esca (Black Measles)",
+      "description": "A complex fungal trunk disease affecting older vines. It blocks water transport and releases toxins.",
+      "urgency": {
+        "level": "Critical",
+        "action": "No cure. Incurable and fatal to the vine part."
+      },
+      "symptoms": [
+        "Leaves show 'tiger stripes' (yellow/red distinct bands between veins). ",
+        "Small dark spots on berries ('measles').",
+        "Sudden wilting of whole branches (apoplexy)."
+      ],
+      "controls": {
+        "natural": [
+          "Remove infected vines and burn them.",
+          "Trunk renewal: Cut the trunk below the infected area and train a new sucker."
+        ],
+        "chemical": [
+          "Wound sealants (paint/paste) on pruning cuts to prevent infection.",
+          "No chemical cures established infection."
+        ],
+        "prevention": [
+          "Disinfect pruning tools between vines.",
+          "Avoid pruning during wet weather."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Biogas. Use removed infected wood (carefully handled) or other farm waste for biogas generation, ensuring pathogens are destroyed by heat.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "plant_type": "Grape",
+      "name": "Isariopsis Leaf Spot",
+      "description": "Fungal disease causing spotting and premature defoliation, weakening the vine.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Reduces vine vigor and next year's yield."
+      },
+      "symptoms": [
+        "Irregular reddish-brown spots on leaves. ",
+        "Fuzzy olive-brown fungal growth on the underside of spots.",
+        "Leaves turn yellow and drop early."
+      ],
+      "controls": {
+        "natural": [
+          "Copper-based organic fungicides.",
+          "Improve air circulation."
+        ],
+        "chemical": [
+          "Mancozeb spray.",
+          "Chlorothalonil."
+        ],
+        "prevention": [
+          "Collect and burn fallen leaves.",
+          "Dormant spray with Lime Sulfur."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Vineyard + Sheep. Sheep graze the vineyard floor in winter (when vines are dormant) to eat fallen leaves and weeds, reducing fungal carryover.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Grape___healthy",
+      "plant_type": "Grape",
+      "name": "Healthy Grape Vine",
+      "description": "Vines are robust with green, intact leaves.",
+      "urgency": {
+        "level": "Low",
+        "action": "Excellent."
+      },
+      "symptoms": [
+        "Green leaves."
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Regular pruning and training."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Vineyard + Agritourism. Healthy vineyards are ideal for integrating tourism, wine tasting, and selling byproduct jams/jellies.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "plant_type": "Orange",
+      "name": "Citrus Greening (HLB)",
+      "description": "A bacterial disease (Candidatus Liberibacter) spread by the Asian Citrus Psyllid. It blocks phloem, starving the roots.",
+      "urgency": {
+        "level": "Critical",
+        "action": "Global threat to citrus. Trees usually die within 5 years."
+      },
+      "symptoms": [
+        "Asymmetrical blotchy mottling (yellowing) on leaves. ",
+        "Yellow veins and corky veins.",
+        "Fruit stays green at the bottom (greening) and tastes bitter/salty.",
+        "Misshapen, lopsided fruit."
+      ],
+      "controls": {
+        "natural": [
+          "There is NO CURE. Infected trees must be removed.",
+          "Release parasitic wasps (Tamarixia radiata) to control the psyllid vector."
+        ],
+        "chemical": [
+          "Systemic insecticides (Imidacloprid) to kill psyllids.",
+          "Antibiotic injections (Oxytetracycline) can suppress symptoms but not cure."
+        ],
+        "prevention": [
+          "Use only certified disease-free nursery stock.",
+          "Aggressive monitoring and control of psyllids."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Citrus + Apiculture. While battling greening, maintaining high biodiversity is key. Beehives support pollination of cover crops that attract beneficial insects (predators of psyllids).",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Peach___Bacterial_spot",
+      "plant_type": "Peach",
+      "name": "Bacterial Spot (Peach)",
+      "description": "Caused by Xanthomonas campestris. It causes defoliation and pitted fruit.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Fruit becomes unmarketable."
+      },
+      "symptoms": [
+        "Small, angular, water-soaked spots on leaves.",
+        "Centers of spots fall out, leaving a 'shot-hole' appearance. ",
+        "Cracks and pits on the fruit surface.",
+        "Leaves turn yellow and drop."
+      ],
+      "controls": {
+        "natural": [
+          "Copper sprays (cautiously, as they can burn peach leaves).",
+          "Bacteriophages (viruses that kill bacteria) specifically for Xanthomonas."
+        ],
+        "chemical": [
+          "Oxytetracycline (antibiotic) sprays (Mycoshield).",
+          "Copper ammonium complex."
+        ],
+        "prevention": [
+          "Plant resistant varieties (e.g., Candor, Southern Pearl).",
+          "Fertilize appropriately to maintain vigor but avoid excess nitrogen."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Poultry. Free-range chickens in the orchard help control plum curculio and other insect pests that create wounds where bacteria can enter.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Peach___healthy",
+      "plant_type": "Peach",
+      "name": "Healthy Peach Tree",
+      "description": "Leaves are long, lanceolate, and green.",
+      "urgency": {
+        "level": "Low",
+        "action": "Good health."
+      },
+      "symptoms": [
+        "Green leaves. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Dormant oil spray for scale insects."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Apiary. Peaches are self-fertile but bees improve fruit size and quality.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "plant_type": "Pepper",
+      "name": "Bacterial Spot (Pepper)",
+      "description": "A serious seed-borne bacterial disease spread by splashing water.",
+      "urgency": {
+        "level": "High",
+        "action": "Spreads rapidly in wet seasons."
+      },
+      "symptoms": [
+        "Small, water-soaked spots on leaves that turn brown/black. ",
+        "Spots often have a yellow halo.",
+        "Raised, scab-like spots on the peppers.",
+        "Leaf drop exposes fruit to sunscald."
+      ],
+      "controls": {
+        "natural": [
+          "Copper fungicides (OMRI listed).",
+          "Remove infected plants immediately.",
+          "Mulch to prevent soil splash."
+        ],
+        "chemical": [
+          "Fixed copper mixed with Mancozeb (more effective than copper alone).",
+          "Agri-Strep (Streptomycin)."
+        ],
+        "prevention": [
+          "Hot water seed treatment (122\u00b0F for 25 mins).",
+          "Crop rotation (do not plant after tomato/potato)."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Vegetable Crop + Vermicompost. Use vermicompost tea as a foliar spray; it has been shown to suppress bacterial spot severity.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Pepper,_bell___healthy",
+      "plant_type": "Pepper",
+      "name": "Healthy Bell Pepper",
+      "description": "Sturdy stems and glossy green leaves.",
+      "urgency": {
+        "level": "Low",
+        "action": "Optimal."
+      },
+      "symptoms": [
+        "Glossy leaves."
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Stake plants to keep fruit off the ground."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Crop + Biogas. Pepper plant waste (post-harvest) is excellent for biogas digesters.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Potato___Early_blight",
+      "plant_type": "Potato",
+      "name": "Early Blight (Potato)",
+      "description": "Fungal disease (Alternaria solani) affecting older leaves first. It stresses the plant and reduces tuber size.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Manageable with good practices."
+      },
+      "symptoms": [
+        "Dark brown spots with concentric rings (target board pattern). ",
+        "Yellowing of tissue around the spots.",
+        "Lower leaves die and hang on the stem."
+      ],
+      "controls": {
+        "natural": [
+          "Maintain plant vigor with adequate nitrogen and phosphorus.",
+          "Bacillus subtilis bio-fungicide."
+        ],
+        "chemical": [
+          "Chlorothalonil (Bravo).",
+          "Mancozeb or Azoxystrobin."
+        ],
+        "prevention": [
+          "Crop rotation (3-4 years).",
+          "Drip irrigation to keep leaves dry."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Dryland/Gardenland: Crop + Dairy. Potatoes have high nutrient demands; dairy manure (composted) provides the necessary bulk organic matter.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Potato___Late_blight",
+      "plant_type": "Potato",
+      "name": "Late Blight (Potato)",
+      "description": "The historical famine-causing pathogen (Phytophthora infestans). It destroys foliage and rots tubers.",
+      "urgency": {
+        "level": "Critical",
+        "action": "Immediate destruction of infected plants required. Extremely contagious."
+      },
+      "symptoms": [
+        "Large, dark, water-soaked blotches on leaves. ",
+        "White fuzzy fungal growth on the underside in humid weather.",
+        "Tubers have reddish-brown, granular rot under the skin.",
+        "Putrid smell."
+      ],
+      "controls": {
+        "natural": [
+          "Copper fungicides (preventative only).",
+          "Kill vines (burn/cut) 2 weeks before harvest to prevent tuber infection."
+        ],
+        "chemical": [
+          "Metalaxyl (often resistance issues).",
+          "Cymoxanil or Dimethomorph."
+        ],
+        "prevention": [
+          "Eliminate 'cull piles' (waste potatoes) where the fungus overwinters.",
+          "Use certified seed potatoes."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Broader Integration: Livestock-Crop Mix (Pigs). Pigs can root out and eat leftover tubers after harvest (gleaning), removing volunteer potatoes that would otherwise harbor Late Blight.",
+        "linked_model_id": "broader-livestock"
+      }
+    },
+    {
+      "id": "Potato___healthy",
+      "plant_type": "Potato",
+      "name": "Healthy Potato",
+      "description": "Bushy growth with no spots.",
+      "urgency": {
+        "level": "Low",
+        "action": "Good."
+      },
+      "symptoms": [
+        "Bushy growth. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Hilling soil around stems."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Dryland Model: Crop + Agroforestry. Alley cropping with nitrogen-fixing trees improves soil fertility for potatoes.",
+        "linked_model_id": "dryland-agrisilvi"
+      }
+    },
+    {
+      "id": "Raspberry___healthy",
+      "plant_type": "Raspberry",
+      "name": "Healthy Raspberry",
+      "description": "Canes are upright and leaves are green/silver underneath.",
+      "urgency": {
+        "level": "Low",
+        "action": "Good."
+      },
+      "symptoms": [
+        "Upright canes. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Prune old canes after fruiting."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Apiary. Raspberries are major nectar sources; integrating hives produces high-value raspberry honey.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Soybean___healthy",
+      "plant_type": "Soybean",
+      "name": "Healthy Soybean",
+      "description": "Legume crop with trifoliate leaves.",
+      "urgency": {
+        "level": "Low",
+        "action": "Monitor for aphids."
+      },
+      "symptoms": [
+        "Trifoliate leaves. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": []
+      },
+      "ifs_integration": {
+        "strategy": "Dryland Model: Silvi-Pasture (Crop + Cattle). Soybeans fix nitrogen. Following soy with a grass crop for cattle grazing utilizes this nitrogen efficiently.",
+        "linked_model_id": "dryland-silvipasture"
+      }
+    },
+    {
+      "id": "Squash___Powdery_mildew",
+      "plant_type": "Squash",
+      "name": "Powdery Mildew (Squash)",
+      "description": "Extremely common fungal disease on cucurbits. It blocks sunlight, killing leaves.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Treat early to prolong harvest."
+      },
+      "symptoms": [
+        "White, talcum-powder-like growth on upper and lower leaf surfaces. ",
+        "Leaves turn yellow and brown.",
+        "Premature ripening/sunburn of fruit due to leaf loss."
+      ],
+      "controls": {
+        "natural": [
+          "Neem oil.",
+          "Milk spray (40% milk, 60% water).",
+          "Sulfur dust."
+        ],
+        "chemical": [
+          "Chlorothalonil.",
+          "Myclobutanil."
+        ],
+        "prevention": [
+          "Plant resistant varieties (e.g., PM-resistant zucchini).",
+          "Space plants widely for airflow."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Crop + Apiculture. Squash requires bees for pollination (male to female flowers). Without bees, fruit will abort.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Strawberry___Leaf_scorch",
+      "plant_type": "Strawberry",
+      "name": "Leaf Scorch (Strawberry)",
+      "description": "Fungal disease (Diplocarpon earliana). It gives plants a 'burned' look.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Can kill plants if severe."
+      },
+      "symptoms": [
+        "Irregular purple blotches on leaves. ",
+        "Centers of spots turn brown (not white like leaf spot).",
+        "Leaves curl up and dry out (scorch)."
+      ],
+      "controls": {
+        "natural": [
+          "Remove and burn infected leaves.",
+          "Copper fungicide."
+        ],
+        "chemical": [
+          "Captan or Thiram.",
+          "Syngenta Switch."
+        ],
+        "prevention": [
+          "Plant in well-draining soil.",
+          "Renew strawberry beds every 3-4 years."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Rabbits. While rabbits are pests to strawberries, rabbit manure (cold manure) is one of the best fertilizers for strawberry beds if composted.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Strawberry___healthy",
+      "plant_type": "Strawberry",
+      "name": "Healthy Strawberry",
+      "description": "Low growing rosette with trifoliate leaves.",
+      "urgency": {
+        "level": "Low",
+        "action": "Good."
+      },
+      "symptoms": [
+        "Trifoliate leaves. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Mulch with straw to keep fruit clean."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Apiary. Essential for well-shaped berries.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Tomato___Bacterial_spot",
+      "plant_type": "Tomato",
+      "name": "Bacterial Spot (Tomato)",
+      "description": "Xanthomonas bacteria cause this disease, thriving in warm (75-85\u00b0F), wet conditions.",
+      "urgency": {
+        "level": "High",
+        "action": "Can severely damage fruit quality."
+      },
+      "symptoms": [
+        "Small (1/8 inch) water-soaked spots on leaves. ",
+        "Spots turn dark brown/black and may fall out.",
+        "Raised, scab-like spots on green fruit.",
+        "Leaf yellowing and loss."
+      ],
+      "controls": {
+        "natural": [
+          "Copper-based bactericides.",
+          "Avoid working in the garden when wet.",
+          "Hot water seed treatment."
+        ],
+        "chemical": [
+          "Copper hydroxide + Mancozeb (tank mix).",
+          "Streptomycin (agricultural grade)."
+        ],
+        "prevention": [
+          "Use drip irrigation.",
+          "Stake/cage plants to improve airflow.",
+          "Rotate away from solanaceous crops for 2 years."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Crop + Biogas + Dairy. Tomato plant residue is acidic but can be mixed with dairy slurry for biogas production.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Tomato___Early_blight",
+      "plant_type": "Tomato",
+      "name": "Early Blight (Tomato)",
+      "description": "Alternaria solani fungus. The most common tomato disease.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Very common; treatable if caught early."
+      },
+      "symptoms": [
+        "Brown spots with concentric rings ('bullseye') on lower leaves. ",
+        "Surrounding leaf tissue turns yellow.",
+        "Stem cankers (dark, sunken spots).",
+        "Fruit rot at the stem end."
+      ],
+      "controls": {
+        "natural": [
+          "Remove infected lower leaves (pruning).",
+          "Apply mulch to prevent soil spores splashing onto leaves.",
+          "Bicarbonate sprays."
+        ],
+        "chemical": [
+          "Chlorothalonil (Daconil).",
+          "Mancozeb."
+        ],
+        "prevention": [
+          "Stake plants.",
+          "Ensure adequate calcium and magnesium levels."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Broader Integration: Livestock-Crop (Poultry). Chickens can range in the tomato patch *after* harvest to eat pests and diseased fallen fruit.",
+        "linked_model_id": "broader-livestock"
+      }
+    },
+    {
+      "id": "Tomato___Late_blight",
+      "plant_type": "Tomato",
+      "name": "Late Blight (Tomato)",
+      "description": "Phytophthora infestans. Aggressive and destructive. Capable of killing plants in days.",
+      "urgency": {
+        "level": "Critical",
+        "action": "Act immediately. Isolate and destroy plants."
+      },
+      "symptoms": [
+        "Large, irregular gray-green patches on leaves. ",
+        "Patches turn brown and papery.",
+        "White fuzzy mold ring around spots in humidity.",
+        "Firm, dark brown, rough rot on fruit."
+      ],
+      "controls": {
+        "natural": [
+          "Pull and bag infected plants immediately.",
+          "Copper fungicides as a preventative."
+        ],
+        "chemical": [
+          "Chlorothalonil (preventative).",
+          "Propamocarb hydrochloride (curative)."
+        ],
+        "prevention": [
+          "Avoid overhead watering completely.",
+          "Plant 'Mountain Magic' or 'Defiant' (resistant varieties)."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Broader Integration: Aquaculture-Agriculture (Aquaponics). In aquaponics, tomatoes thrive, and the controlled environment (greenhouse) prevents Late Blight spores from entering.",
+        "linked_model_id": "broader-aqua"
+      }
+    },
+    {
+      "id": "Tomato___Leaf_Mold",
+      "plant_type": "Tomato",
+      "name": "Leaf Mold",
+      "description": "Passalora fulva fungus. Common in greenhouses or high humidity.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Reduces yield but rarely kills the plant."
+      },
+      "symptoms": [
+        "Pale green or yellow spots on the upper leaf surface. ",
+        "Olive-green or brown velvety mold on the underside.",
+        "Leaves curl, wither, and drop."
+      ],
+      "controls": {
+        "natural": [
+          "Increase ventilation/spacing.",
+          "Copper sprays.",
+          "Neem oil."
+        ],
+        "chemical": [
+          "Chlorothalonil.",
+          "Difenoconazole."
+        ],
+        "prevention": [
+          "Keep humidity below 85%.",
+          "Use fans in greenhouses."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Broader Integration: Aquaculture-Agriculture (Aquaponics). Leaf mold is a greenhouse issue; integrating fish tanks provides heat mass and nutrients while requiring strict humidity control.",
+        "linked_model_id": "broader-aqua"
+      }
+    },
+    {
+      "id": "Tomato___Septoria_leaf_spot",
+      "plant_type": "Tomato",
+      "name": "Septoria Leaf Spot",
+      "description": "Septoria lycopersici fungus. Affects leaves, not fruit.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Causes defoliation, exposing fruit to sunscald."
+      },
+      "symptoms": [
+        "Numerous small, circular spots (1/16 to 1/8 inch). ",
+        "Spots have dark margins and gray/white centers.",
+        "Tiny black dots in the center of spots.",
+        "Starts at bottom leaves and moves up."
+      ],
+      "controls": {
+        "natural": [
+          "Remove lower leaves.",
+          "Copper fungicide.",
+          "Mulch heavily."
+        ],
+        "chemical": [
+          "Chlorothalonil.",
+          "Mancozeb."
+        ],
+        "prevention": [
+          "Sanitation: Remove all crop debris at end of season.",
+          "3-year crop rotation."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Wetland Model: Crop + Mushroom. Spent tomato haulms (stems) can be composted and used as a substrate component for certain mushroom species.",
+        "linked_model_id": "wetland-mushroom"
+      }
+    },
+    {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "plant_type": "Tomato",
+      "name": "Two-Spotted Spider Mite",
+      "description": "Tiny arachnids that suck plant sap. They thrive in hot, dry conditions.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Can explode in population rapidly."
+      },
+      "symptoms": [
+        "Yellow or white stippling (tiny dots) on leaves. ",
+        "Fine webbing visible between leaves and stems. ",
+        "Leaves turn bronze/gray and brittle."
+      ],
+      "controls": {
+        "natural": [
+          "Strong stream of water to knock them off.",
+          "Introduction of predatory mites (Phytoseiulus persimilis).",
+          "Neem oil or insecticidal soap."
+        ],
+        "chemical": [
+          "Abamectin (Miticide).",
+          "Bifenazate."
+        ],
+        "prevention": [
+          "Keep plants well-watered (mites hate humidity).",
+          "Avoid broad-spectrum insecticides (they kill mite predators)."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Horticulture + Mixed (Trap Cropping). Plant marigolds or dill nearby to attract predatory insects that eat mites.",
+        "linked_model_id": "garden-mixed"
+      }
+    },
+    {
+      "id": "Tomato___Target_Spot",
+      "plant_type": "Tomato",
+      "name": "Target Spot",
+      "description": "Corynespora cassiicola fungus. Similar to Early Blight but attacks fruit more aggressively.",
+      "urgency": {
+        "level": "Medium",
+        "action": "Can ruin fruit marketability."
+      },
+      "symptoms": [
+        "Brown-black lesions with subtle concentric rings. ",
+        "Lesions on fruit are sunken and firm.",
+        "Leaf centers may crack and fall out."
+      ],
+      "controls": {
+        "natural": [
+          "Copper fungicides.",
+          "Improve airflow."
+        ],
+        "chemical": [
+          "Azoxystrobin.",
+          "Pyraclostrobin."
+        ],
+        "prevention": [
+          "Remove volunteer plants.",
+          "Avoid wetting leaves."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Crop + Dairy. Similar to other tomato fungal issues, soil health is key. Composted dairy manure suppresses soil-borne phases of fungal pathogens.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "plant_type": "Tomato",
+      "name": "Yellow Leaf Curl Virus (TYLCV)",
+      "description": "A Begomovirus transmitted by Silverleaf Whiteflies. It halts fruit production.",
+      "urgency": {
+        "level": "High",
+        "action": "Plants infected early will produce no fruit."
+      },
+      "symptoms": [
+        "New leaves are small, curled upward (cup-shaped), and yellow (chlorotic) at edges. ",
+        "Plants become stunted/dwarfed.",
+        "Flowers drop off."
+      ],
+      "controls": {
+        "natural": [
+          "Remove and bag infected plants immediately (virus source).",
+          "Control whiteflies with sticky traps and Neem oil.",
+          "Reflective silver mulch repels whiteflies."
+        ],
+        "chemical": [
+          "Imidacloprid (systemic) to control whitefly vector.",
+          "Dinotefuran."
+        ],
+        "prevention": [
+          "Use virus-resistant varieties (look for 'TY' on label).",
+          "Weed control (nightshade weeds host the virus)."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Crop + Dairy + Biogas. Integrated pest management within a dairy system helps reduce viral vectors.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "plant_type": "Tomato",
+      "name": "Tomato Mosaic Virus (ToMV)",
+      "description": "A highly contagious virus (Tobamovirus). It is mechanically transmitted (tools, hands, tobacco products).",
+      "urgency": {
+        "level": "High",
+        "action": "No cure. Permanent infection."
+      },
+      "symptoms": [
+        "Light and dark green mottling (mosaic) on leaves. ",
+        "Fern-like or distorted leaves.",
+        "Brown streaks on stems.",
+        "Fruit ripens unevenly."
+      ],
+      "controls": {
+        "natural": [
+          "Remove infected plants.",
+          "Dip tools in milk (the proteins in milk inactivate the virus) or bleach."
+        ],
+        "chemical": [
+          "None exist for viruses."
+        ],
+        "prevention": [
+          "Wash hands after smoking (tobacco carries the virus).",
+          "Plant resistant varieties (look for 'T' or 'Tm' on label)."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Strict Sanitation in Crop + Dairy systems. Ensure workers do not handle livestock/tobacco and then touch crops without sanitation.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Tomato___healthy",
+      "plant_type": "Tomato",
+      "name": "Healthy Tomato",
+      "description": "Vigorous growth, deep green leaves, no wilting.",
+      "urgency": {
+        "level": "Low",
+        "action": "Keep up the good work."
+      },
+      "symptoms": [
+        "Deep green leaves. "
+      ],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": [
+          "Regular sucker pruning."
+        ]
+      },
+      "ifs_integration": {
+        "strategy": "Gardenland Model: Crop + Dairy + Biogas. Planting basil with tomatoes improves flavor and repels flies/mosquitoes.",
+        "linked_model_id": "garden-dairy"
+      }
+    },
+    {
+      "id": "Background_without_leaves",
+      "plant_type": "N/A",
+      "name": "No Plant Detected",
+      "description": "The image does not appear to contain a recognized plant leaf.",
+      "urgency": {
+        "level": "Low",
+        "action": "Please upload a clear image of a plant leaf."
+      },
+      "symptoms": [],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": []
+      },
+      "ifs_integration": {
+        "strategy": "N/A",
+        "linked_model_id": null
+      }
+    },
+    {
+      "id": "default",
+      "plant_type": "Unknown",
+      "name": "Unknown / Unclassified",
+      "description": "The specific disease could not be identified with high confidence.",
+      "urgency": {
+        "level": "Low",
+        "action": "Consult a local agricultural extension office."
+      },
+      "symptoms": [],
+      "controls": {
+        "natural": [],
+        "chemical": [],
+        "prevention": []
+      },
+      "ifs_integration": {
+        "strategy": "General IPM: Monitor crops weekly, identify pests accurately, and use control thresholds.",
+        "linked_model_id": null
+      }
+    }
+  ],
+  "integrated_farming_systems": [
+    {
+      "category": "Wetland-Based Models",
+      "category_description": "Ideal for rice paddies and water-rich areas.",
+      "models": [
+        {
+          "id": "wetland-poultry",
+          "homepage_title": "Crop + Fish + Poultry/Duck/Pigeon",
+          "homepage_description": "Fish control pests in paddies; poultry manure fertilizes water.",
+          "detailed_content": {
+            "page_title": "Rice-Fish-Duck Ecosystem",
+            "hero_subtitle": "A zero-waste operational manual. Turn one acre into three income streams.",
+            "feasibility": [
+              {
+                "topic": "Soil Requirement",
+                "detail": "Clay Soil is Mandatory. You must have soil that retains water. Sandy soil drains too fast for the fish trenches and refuge ponds."
+              },
+              {
+                "topic": "Water Security",
+                "detail": "Must be Irrigated. Rain-fed fields are too risky. You need a reliable water source to maintain levels for fish during dry spells."
+              },
+              {
+                "topic": "Land Area",
+                "detail": "Min: 1 Hectare (2.5 Acres). Below this size, the cost of digging trenches and fencing makes the project economically unviable."
+              }
+            ],
+            "layout_specs": [
+              "Refuge Pond: Dig a 1m deep pond at the lowest corner (10% of field area). ",
+              "Trenches: 0.5m deep channels connecting the pond to the rest of the field.",
+              "Duck Housing: Build directly OVER the pond with slatted floors so manure falls into water."
+            ],
+            "nutrient_cycle": [
+              "Ducks: Manure drops into water.",
+              "Plankton: Algae blooms from manure.",
+              "Fish: Eat plankton & pests.",
+              "Rice: Absorbs fish waste nutrients. "
+            ],
+            "operational_calendar": [
+              {
+                "time": "Day 0",
+                "task": "Planting: Transplant rice seedlings. Keep water low (5cm). No animals yet."
+              },
+              {
+                "time": "Day 15",
+                "task": "Fish Release: Roots are established. Increase water to 15cm. Release fish fingerlings."
+              },
+              {
+                "time": "Day 20",
+                "task": "Duck Release: Rice stems are strong enough. Release ducklings. Start daily grazing."
+              },
+              {
+                "time": "Day 90",
+                "task": "CRITICAL STOP: Remove Ducks Immediately. Rice is flowering. Ducks will eat the grain if left in the field."
+              },
+              {
+                "time": "Day 120",
+                "task": "Harvest: Drain the field. Fish retreat to the deep refuge pond. Harvest rice."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "CRITICAL: NO CHEMICALS",
+                "solution": "Do not use chemical pesticides. The water is shared. Pesticides safe for rice will kill your fish and ducks instantly. Use neem oil or let the ducks eat the pests."
+              },
+              {
+                "risk": "Fish gasping at surface",
+                "solution": "Low Oxygen. Stop duck manuring immediately & add fresh water."
+              },
+              {
+                "risk": "Rice plants uprooted",
+                "solution": "Ducks released too early. Wait strictly until Day 20."
+              }
+            ],
+            "economics": {
+              "cost_savings": "Fertilizer: $0 (Replaced by manure). Pesticide: $0 (Replaced by ducks). Weeding Labor: -90% (Ducks eat weeds).",
+              "income_streams": "Rice: 10-15% higher yield due to aeration. Fish: Sold at end of season. Eggs: Daily income from ducks."
+            }
+          }
+        },
+        {
+          "id": "wetland-mushroom",
+          "homepage_title": "Crop + Fish + Mushroom",
+          "homepage_description": "Mushroom cultivation uses crop residues; fish waste enriches fields.",
+          "detailed_content": {
+            "page_title": "Rice-Fish-Mushroom Ecosystem",
+            "hero_subtitle": "A value-addition model: Convert farm waste (straw) into super-food and fish feed.",
+            "feasibility": [
+              {
+                "topic": "Straw Availability",
+                "detail": "Primary Input. Success depends on abundant rice straw availability. You need fresh straw from your own harvest or neighbors to create mushroom substrate."
+              },
+              {
+                "topic": "Climate Control",
+                "detail": "Cool & Humid. Mushrooms require high humidity (80-90%) and temperatures between 20-28\u00b0C. A shaded area near the field is required for the shed."
+              },
+              {
+                "topic": "Infrastructure",
+                "detail": "Thatched Sheds. You do not need heavy construction. Simple bamboo sheds with thatched roofs provide the perfect ventilation for mushroom spawn running."
+              }
+            ],
+            "layout_specs": [
+              "Mushroom Shed: Build near the pond dyke. Size: 5m x 10m for 500 bags. ",
+              "Pond: Standard fish pond design (min 1.5m deep).",
+              "Sterilization Area: A designated spot for boiling/steaming rice straw before bagging."
+            ],
+            "nutrient_cycle": [
+              "Rice Harvest: Produces tons of straw.",
+              "Mushrooms: Grow on straw substrate.",
+              "Spent Compost: Waste after harvest.",
+              "Fish: Eat compost as protein. "
+            ],
+            "operational_calendar": [
+              {
+                "time": "Day 1",
+                "task": "Straw Prep: Collect fresh straw. Chop into 2-inch pieces. Soak in water and sterilize (boil/steam)."
+              },
+              {
+                "time": "Day 2",
+                "task": "Spawning: Layer straw and mushroom spawn (seeds) into plastic bags. Hang bags in the dark shed."
+              },
+              {
+                "time": "Day 25",
+                "task": "First Harvest: Pinheads appear. Harvest mature mushrooms daily for the next 15 days."
+              },
+              {
+                "time": "Day 45",
+                "task": "Recycling: Bag Exhausted. The straw is now 'Spent Mushroom Compost' (SMC). Dump this into the fish pond."
+              },
+              {
+                "time": "Day 46",
+                "task": "Fish Feeding: Fish consume the protein-rich compost. Leftover compost settles and fertilizes the pond bottom."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "Hygiene Alert (Green Mold)",
+                "solution": "Contamination is the enemy. Mushroom bags can easily get infected by green mold (Trichoderma). Remove infected bags immediately. Do not feed to fish. Burn/Bury."
+              },
+              {
+                "risk": "Fish water too murky",
+                "solution": "Over-dumping of compost. Stop feeding for 3 days."
+              }
+            ],
+            "economics": {
+              "cash_flow": "Rice: Income once every 4-5 months. Fish: Income once every 6-8 months. Mushrooms: Weekly Income. This provides daily cash for household expenses.",
+              "value_addition": "Straw Value: Increases from $0 (waste) to high value (substrate). Feed Savings: Reduced fish feed cost by 30% using spent compost. Dried Mushrooms: Unsold fresh mushrooms can be dried for long-term storage."
+            }
+          }
+        },
+        {
+          "id": "wetland-ricefish",
+          "homepage_title": "Rice-Fish Integration",
+          "homepage_description": "Fish thrive in flooded rice fields, improving soil via excretion.",
+          "detailed_content": {
+            "page_title": "Rice-Fish Integration",
+            "hero_subtitle": "The 'Golden Harvest' Model: Double the yield from the same body of water.",
+            "feasibility": [
+              {
+                "topic": "Soil Requirement",
+                "detail": "Heavy Clay / Loam. Water retention is the most critical factor. The soil must hold water for 3-4 months without seepage, otherwise, fish will be stressed by fluctuating water levels."
+              },
+              {
+                "topic": "History Check",
+                "detail": "Chemical Free. Ensure the land has not been sprayed with heavy pesticides recently. Residual toxicity in the soil can be lethal to fish fry."
+              },
+              {
+                "topic": "Water Depth",
+                "detail": "Min: 10-15 cm. While rice loves water, fish need slightly more depth to swim freely. You must be able to maintain at least 15cm depth in the main field."
+              }
+            ],
+            "layout_specs": [
+              "Refuge Pond: Dedicate 10% of the land area to a deeper pond (1m depth) at one end. ",
+              "Perimeter Trenches: Dig wide channels (1m wide, 0.5m deep) around the field edges.",
+              "Screens: Install mesh screens at water inlets and outlets to prevent fish from escaping."
+            ],
+            "nutrient_cycle": [
+              "Fish Waste: Excretes Ammonia & Nitrogen.",
+              "Movement: Fish swim & aerate soil.",
+              "Rice Roots: Absorb Nitrogen directly.",
+              "Pest Control: Fish eat stem borers & larvae."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Day 0",
+                "task": "Transplanting: Plant rice seedlings. Keep water shallow (5cm) to encourage rooting."
+              },
+              {
+                "time": "Day 15",
+                "task": "Flooding & Stocking: Increase water level to 15cm. Release fish fingerlings (Rohu, Catla). They will graze on algae and weeds."
+              },
+              {
+                "time": "Day 20 - 90",
+                "task": "Growth Phase: Daily maintenance. Ensure water screens are intact. Fish stir the soil, releasing nutrients for rice."
+              },
+              {
+                "time": "Day 100",
+                "task": "Pre-Harvest Drain: Slowly drain the main field. Fish will naturally migrate to the deeper 'Refuge Pond' via trenches."
+              },
+              {
+                "time": "Day 110",
+                "task": "Rice Harvest: Harvest the rice crop. Fish can be harvested now or kept in the refuge pond to grow larger."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "DANGER: PESTICIDES",
+                "solution": "Zero Tolerance. Fish are extremely sensitive to agricultural chemicals. Even a small amount of run-off from a neighbor's field can kill your entire stock."
+              },
+              {
+                "risk": "Fish escaping",
+                "solution": "Heavy rain can overflow bunds. Install double-layer mesh screens."
+              },
+              {
+                "risk": "Predators (Birds/Snakes)",
+                "solution": "Use bird netting over the refuge pond area."
+              }
+            ],
+            "economics": {
+              "double_income": "Rice Yield: Increases by 10-15% due to better soil aeration and organic fertilization. Protein Income: Fish sales provide a substantial bonus income at the end of the season.",
+              "lower_costs": "Weeding: Fish eat weeds, reducing labor costs. Pesticide: Fish eat pests, eliminating chemical costs. Fertilizer: Fish waste replaces Urea."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "Gardenland-Based Models",
+      "category_description": "Ideal for horticulture and mixed cropping with livestock.",
+      "models": [
+        {
+          "id": "garden-dairy",
+          "homepage_title": "Crop + Dairy + Biogas",
+          "homepage_description": "Manure generates biogas; slurry fertilizes crops.",
+          "detailed_content": {
+            "page_title": "Crop-Dairy-Biogas Ecosystem",
+            "hero_subtitle": "The 'Energy Independent' Farm: Convert manure into cooking gas and liquid gold fertilizer.",
+            "feasibility": [
+              {
+                "topic": "Livestock Count",
+                "detail": "Min: 2-3 Cows. To generate enough pressure for a household biogas cooking connection, you need a steady supply of dung (approx 25-30kg per day)."
+              },
+              {
+                "topic": "Fodder Land",
+                "detail": "Napier Grass Plot. You need dedicated land to grow high-yield fodder like Hybrid Napier or Maize to feed the cattle, closing the loop."
+              },
+              {
+                "topic": "Water Availability",
+                "detail": "1:1 Mixing Ratio. Biogas digesters require mixing dung with an equal amount of water. You need a consistent water source for this daily mix."
+              }
+            ],
+            "layout_specs": [
+              "Cattle Shed: Build with a sloped concrete floor so urine and dung wash directly into a collection channel. ",
+              "Biogas Digester: Underground brick/cement dome. Locate it near the kitchen to minimize gas pipe length.",
+              "Slurry Pit: A collection tank for the 'spent' liquid that comes out of the digester (the fertilizer)."
+            ],
+            "nutrient_cycle": [
+              "Cattle: Produces Dung.",
+              "Biogas Unit: Extracts Methane Gas.",
+              "Bio-Slurry: Liquid Fertilizer Output.",
+              "Crops: Fodder/Veg grown on Slurry. "
+            ],
+            "operational_calendar": [
+              {
+                "time": "06:00 AM",
+                "task": "Milking & Cleaning: Milk the cows. Wash the shed floor. Collect fresh dung."
+              },
+              {
+                "time": "07:00 AM",
+                "task": "Feeding the Digester: Mix fresh dung with water in a 1:1 ratio. Pour into the inlet tank. This pushes old slurry out."
+              },
+              {
+                "time": "08:00 AM",
+                "task": "Slurry Application: Collect the overflow slurry. Dilute it and apply it to the fodder grass or vegetable patch immediately."
+              },
+              {
+                "time": "12:00 PM",
+                "task": "Cooking: Use the generated methane gas for cooking lunch. The pressure builds up overnight and during the morning."
+              },
+              {
+                "time": "05:00 PM",
+                "task": "Fodder Harvest: Cut fresh Napier grass (fertilized by slurry) to feed the cows for the evening."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "SAFETY WARNING (Methane)",
+                "solution": "Methane is Flammable. Regularly check the gas valve and pipeline for leaks. Do not light fires near the digester dome."
+              },
+              {
+                "risk": "Low Gas Pressure",
+                "solution": "Cattle fed with too much dry straw. Increase green fodder intake."
+              },
+              {
+                "risk": "Acidic Slurry (Bad smell)",
+                "solution": "Overfeeding the digester. Reduce loading rate for 3 days."
+              }
+            ],
+            "economics": {
+              "cost_elimination": "LPG Gas: 100% savings on cooking fuel. Fertilizer: Bio-slurry replaces Urea/DAP for crops. Electricity: Can power simple lamps if volume is high.",
+              "revenue_sources": "Milk Sales: Primary daily income. Vegetable Sales: Excess crops grown using slurry. Dried Manure: Excess sludge can be dried and sold as compost."
+            }
+          }
+        },
+        {
+          "id": "garden-sericulture",
+          "homepage_title": "Crop + Dairy + Biogas + Sericulture/Mushroom",
+          "homepage_description": "Adds silk, fungi, or trees for income diversification.",
+          "detailed_content": {
+            "page_title": "Dairy-Sericulture-Biogas",
+            "hero_subtitle": "High-Value Diversification: Combining milk production with the 'Queen of Textiles' (Silk).",
+            "feasibility": [
+              {
+                "topic": "Mulberry Garden",
+                "detail": "Loamy Soil. You need dedicated land for Mulberry cultivation. The soil must be deep, fertile, and well-drained. The leaves feed the silkworms."
+              },
+              {
+                "topic": "Micro-Climate",
+                "detail": "Cool & Humid. Silkworms are sensitive. The rearing house requires a temperature of 24-28\u00b0C and humidity of 70-85%. Hot, dry regions need humidifiers."
+              },
+              {
+                "topic": "Labor Intensive",
+                "detail": "Skilled Labor. Unlike crops, silkworms need feeding 4 times a day during the rearing cycle. Ensure you have the manpower available."
+              }
+            ],
+            "layout_specs": [
+              "Rearing House: Must be separate from the cattle shed to prevent fly contamination. Windows must have wire mesh to stop uzi flies. ",
+              "Biogas Unit: Connected to the cattle shed. The slurry outlet should lead directly to the Mulberry irrigation channel.",
+              "Shoot Racks: Wooden or bamboo racks inside the rearing house to hold the silkworms."
+            ],
+            "nutrient_cycle": [
+              "Dairy Cows: Provide Dung.",
+              "Biogas Slurry: Liquid Fertilizer.",
+              "Mulberry: Rapid Leaf Growth.",
+              "Silkworms: Produce Silk Cocoons."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Day 1-30",
+                "task": "Garden Prep: Apply Biogas slurry to Mulberry garden. Prune branches to stimulate fresh leaf growth."
+              },
+              {
+                "time": "Day 31",
+                "task": "Brushing: Receive silkworm eggs (DFLs) from the grainage center. 'Brush' (transfer) tiny larvae onto fresh leaves."
+              },
+              {
+                "time": "Day 32-55",
+                "task": "Rearing: Feed larvae chopped mulberry leaves 3-4 times daily. Clean the bed (remove waste) every 2 days."
+              },
+              {
+                "time": "Day 56-60",
+                "task": "Mounting: Worms stop eating and look for a spot to spin. Transfer them to 'Mountages' (Chandrike) to spin cocoons."
+              },
+              {
+                "time": "Day 65",
+                "task": "Harvest & Market: Harvest the golden cocoons. Transport to the silk market immediately before the moth emerges."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "HYGIENE ALERT",
+                "solution": "Silkworms are fragile. Do not enter the rearing house after visiting the cattle shed without washing hands/feet. Disinfect the house with Bleaching Powder before every batch."
+              },
+              {
+                "risk": "Uzi Fly Attack",
+                "solution": "Parasitic flies kill worms. Keep windows meshed. Use Uzi traps."
+              },
+              {
+                "risk": "Low Leaf Yield",
+                "solution": "Soil nutrient deficiency. Increase Biogas slurry application."
+              }
+            ],
+            "economics": {
+              "cash_flow": "Silk Cocoons: Sold per KG. High market value compared to standard crops. Milk: Provides steady daily cash flow to support the farm while waiting for the silk batch.",
+              "input_reduction": "Fertilizer: Biogas slurry reduces fertilizer cost for Mulberry by 40%. Fuel: Biogas saves household cooking costs. Litter Reuse: Silkworm waste (litter) is high-protein feed for fish (if you have a pond)."
+            }
+          }
+        },
+        {
+          "id": "garden-mixed",
+          "homepage_title": "Horticulture + Duckery + Fishery + Apiary",
+          "homepage_description": "Ducks control weeds; bees pollinate; compost recycles waste.",
+          "detailed_content": {
+            "page_title": "Horticulture-Apiary-Duckery-Fishery",
+            "hero_subtitle": "The 'Full Ecosystem' Model: Integrating pollinators, pest controllers, and waste recyclers in one garden.",
+            "feasibility": [
+              {
+                "topic": "Floral Calendar",
+                "detail": "Year-Round Blooms. For the Apiary (bees) to survive, you must plant crops that flower at different times (e.g., Mustard, Sunflower, Drumstick) to ensure nectar availability all year."
+              },
+              {
+                "topic": "Shade & Sunlight",
+                "detail": "Multi-Tier. You need tall trees (Coconut/Mango) for shade and bee boxes, and sunny spots for the fish pond and ground crops (Turmeric/Ginger)."
+              },
+              {
+                "topic": "Water Body",
+                "detail": "Small Pond Required. A small fish pond (even 20x20ft) is essential to house the fish and provide a swimming area for the ducks to clean themselves."
+              }
+            ],
+            "layout_specs": [
+              "Apiary: Place bee boxes under the shade of trees, facing East. Keep away from the compost pit (bad smell irritates bees). ",
+              "Duck House: Build near the pond. Ducks will swim during the day and forage in the orchard for snails/weeds.",
+              "Vermicompost Pit: Build in a cool, shaded corner. Use farm waste (leaves, weeds) and duck manure as input."
+            ],
+            "nutrient_cycle": [
+              "Ducks: Control weeds & pests.",
+              "Fish Pond: Enriched by Duck Manure.",
+              "Garden: Irrigated by Pond Water.",
+              "Bees: Pollinate the Garden.",
+              "Compost: Recycles Garden Waste. "
+            ],
+            "operational_calendar": [
+              {
+                "time": "Daily",
+                "task": "Duck & Fish: Morning: Release ducks into the orchard. Feed fish. Evening: Collect duck eggs and lock ducks."
+              },
+              {
+                "time": "Weekly",
+                "task": "Vermicompost: Collect fallen leaves and weeds from the garden. Dump into the vermicompost pit. Sprinkle water to keep worms moist."
+              },
+              {
+                "time": "Monthly",
+                "task": "Apiary Check: Inspect bee boxes for ants or mites. Clean the bottom board. Check sugar syrup levels in lean seasons."
+              },
+              {
+                "time": "Seasonally",
+                "task": "Harvest: Honey: Extract twice a year. Fruits: Harvest based on season. Fish: Harvest once a year."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "CRITICAL: NO CHEMICAL SPRAYS",
+                "solution": "Bees are your indicator. If you spray chemical pesticides on your fruit trees, your entire bee colony will die immediately. Use Neem oil or vermiwash only."
+              },
+              {
+                "risk": "Ducks damaging vegetables",
+                "solution": "Ducks eat soft leaves. Fence off the vegetable patch; let them roam only in the orchard."
+              },
+              {
+                "risk": "Ants attacking Beehives",
+                "solution": "Place the legs of the bee box stand in bowls of water (water barriers)."
+              }
+            ],
+            "economics": {
+              "5_income_streams": "Honey & Wax: High value, non-perishable. Fruits/Crops: 20% higher yield due to Bee Pollination. Duck Eggs/Meat: Regular income. Fish: Annual bonus income. Vermicompost: Sell excess fertilizer.",
+              "zero_waste": "Weeds: Eaten by ducks or composted. Fallen Fruit: Eaten by fish or composted. Manure: Fertilizes the pond and crops."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "Dryland-Based Models",
+      "category_description": "Focus on drought-prone areas with trees and small ruminants.",
+      "models": [
+        {
+          "id": "dryland-goat",
+          "homepage_title": "Crop + Goat + Agroforestry",
+          "homepage_description": "Goats graze residues; trees prevent erosion.",
+          "detailed_content": {
+            "page_title": "Crop-Goat-Agroforestry",
+            "hero_subtitle": "The 'Dryland ATM' Model: Ensuring survival and profit even in drought-prone regions.",
+            "feasibility": [
+              {
+                "topic": "Fodder Banks",
+                "detail": "Drought Insurance. You must dedicate land to drought-resistant grasses like Napier or Stylo. These act as 'Fodder Banks' to feed goats when rain fails."
+              },
+              {
+                "topic": "Water Harvesting",
+                "detail": "Farm Ponds. Since this is a dryland model, you must build swales or bunds to catch every drop of rain. Rain-fed crops depend on this stored soil moisture."
+              },
+              {
+                "topic": "Goat Breed",
+                "detail": "Hardy Breeds. Select breeds that thrive in harsh heat and can eat diverse vegetation, such as Boer or local hardy varieties."
+              }
+            ],
+            "layout_specs": [
+              "Elevated Housing: Build goat sheds on raised platforms (slatted floors). This prevents foot rot and pneumonia caused by damp ground. ",
+              "Alley Cropping: Plant crops in 'alleys' between rows of trees. The trees act as windbreaks and prevent soil erosion.",
+              "Fencing: Strong perimeter fencing is mandatory. Goats are notorious escape artists and will destroy your main crop if loose."
+            ],
+            "nutrient_cycle": [
+              "Crop Residue: Stalks/Leaves after harvest.",
+              "Goats: Graze on Residue & Trees.",
+              "Goat Manure: Rich Fertilizer.",
+              "Trees & Soil: Manure restores Soil Health."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Rainy Season",
+                "task": "Planting: Sow main crops. Goats are kept in the shed or grazed on wasteland, NOT in the main field."
+              },
+              {
+                "time": "End of Rains",
+                "task": "Silage Making: Harvest excess green fodder and preserve it as Silage/Hay. This is your food stock for the upcoming dry summer."
+              },
+              {
+                "time": "Dry Season",
+                "task": "Grazing: Crops are harvested. Release goats into the field to graze on stubble/residue. This cleans the field for next year."
+              },
+              {
+                "time": "Late Summer",
+                "task": "Tree Pruning: Prune tree branches. Feed leaves to goats. The pruning allows sunlight to reach the ground for the next crop cycle."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "CROP DESTRUCTION",
+                "solution": "Goats eat everything. If goats enter the field while crops are young, they will wipe out the harvest in hours. Maintain fences daily."
+              },
+              {
+                "risk": "Foot Rot Disease",
+                "solution": "Caused by wet ground. Use Elevated Platform housing."
+              },
+              {
+                "risk": "Fodder Shortage",
+                "solution": "Use tree leaves (Agroforestry) and stored Silage during droughts."
+              }
+            ],
+            "economics": {
+              "liquid_assets": "Goats (The ATM): Can be sold instantly whenever cash is needed. High demand for meat (Chevon). Timber/Fruit: Agroforestry trees provide long-term lump sum income (timber) or seasonal fruit.",
+              "resilience": "Crop Failure: If rains fail and crops die, feed the dried crop to goats. You still get income from the animals. Soil Value: Trees prevent topsoil erosion, maintaining land value over decades."
+            }
+          }
+        },
+        {
+          "id": "dryland-agrisilvi",
+          "homepage_title": "Agri-Silviculture",
+          "homepage_description": "Crops under trees for shade and timber.",
+          "detailed_content": {
+            "page_title": "Agri-Silviculture",
+            "hero_subtitle": "The 'Two-Story' Farm: Growing timber in the sky and crops on the ground.",
+            "feasibility": [
+              {
+                "topic": "Tree Selection",
+                "detail": "Deep Rooted. Select trees with deep taproots (e.g., Teak, Melia dubia) so they don't compete with crops for surface water. Avoid surface feeders."
+              },
+              {
+                "topic": "Crop Compatibility",
+                "detail": "Shade Tolerance. During the early years, you can grow any crop. As trees mature, switch to shade-loving crops like Turmeric, Ginger, or Coffee."
+              },
+              {
+                "topic": "Orientation",
+                "detail": "East-West Rows. Plant tree rows from East to West. This minimizes the shadow cast on the crops during the day, maximizing photosynthesis."
+              }
+            ],
+            "layout_specs": [
+              "Spacing: Standard model is 10ft x 10ft or wide-row model 20ft (between rows) x 5ft (between trees). ",
+              "Alleys: The 20ft gap is the 'Alley' where you plow and plant seasonal crops (Groundnut/Pulses).",
+              "Root Barriers: Dig a 2ft deep trench alongside tree rows to cut lateral roots, forcing trees to go deep."
+            ],
+            "nutrient_cycle": [
+              "Deep Roots: Pump minerals from sub-soil.",
+              "Leaf Litter: Falls & decomposes on top.",
+              "Humus: Enriches topsoil layer.",
+              "Crops: Feed on enriched topsoil."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Year 1",
+                "task": "Establishment: Plant trees. In the wide spaces, plant sun-loving crops (Corn/Vegetables). Trees are small, so shading is zero."
+              },
+              {
+                "time": "Year 3",
+                "task": "Canopy Management: Trees start casting shadows. Prune lower branches (up to 50% height) to allow light and produce knot-free timber."
+              },
+              {
+                "time": "Year 5",
+                "task": "Crop Transition: Canopy closes in. Switch to shade-tolerant intercrops like Ginger, Turmeric, or Fodder Grass."
+              },
+              {
+                "time": "Year 10-15",
+                "task": "Timber Harvest: Harvest the timber. The 'Lump Sum' payout. Replant trees and restart the cycle."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "ALLELOPATHY",
+                "solution": "Chemical Warfare. Some trees (like Eucalyptus or Walnut) release toxins to kill nearby plants. Never plant these with food crops. Use Nitrogen-fixers like Gliricidia or Acacia instead."
+              },
+              {
+                "risk": "Yield Reduction (Shade)",
+                "solution": "Aggressive pruning of tree branches. Align rows East-West."
+              },
+              {
+                "risk": "Root Competition",
+                "solution": "Dig trenches along tree rows to severe lateral surface roots."
+              }
+            ],
+            "economics": {
+              "pension_plan": "Crops (Short Term): Pay for daily maintenance and living expenses. Timber (Long Term): Acts as a 'Fixed Deposit'. A massive payout after 10-12 years (e.g., Teak/Mahogany).",
+              "climate_shield": "Erosion Control: Tree roots hold soil during heavy rains. Micro-Climate: Trees reduce temperature and wind speed, protecting sensitive crops from heat stress."
+            }
+          }
+        },
+        {
+          "id": "dryland-silvipasture",
+          "homepage_title": "Silvi-Pastoral/Horti-Pastoral",
+          "homepage_description": "Trees integrated with grazing livestock or fruit crops.",
+          "detailed_content": {
+            "page_title": "Silvi-Pastoral / Horti-Pastoral",
+            "hero_subtitle": "The 'Green Grazing' Model: Integrating timber or fruit trees with livestock pastures.",
+            "feasibility": [
+              {
+                "topic": "Tree Choice",
+                "detail": "Fodder or Fruit. Silvi: Use Nitrogen-fixing trees (Subabul, Acacia) that provide leaf fodder. Horti: Use hardy fruit trees (Mango, Cashew) that can withstand animal presence."
+              },
+              {
+                "topic": "Pasture Grass",
+                "detail": "Shade Tolerant. You cannot use standard lawn grass. Use shade-tolerant, high-protein species like Stylosanthes, Cenchrus, or Guinea Grass."
+              },
+              {
+                "topic": "Animal Mix",
+                "detail": "Grazers vs Browsers. Sheep (Grazers): Eat grass on the ground (Good for orchards). Goats (Browsers): Eat leaves (Good for established forestry, dangerous for young fruit trees)."
+              }
+            ],
+            "layout_specs": [
+              "Paddocks: Divide the land into 4-6 fenced zones (Paddocks). Animals move to a new zone every week. ",
+              "Tree Guards: Essential for the first 3 years. Use bamboo or wire mesh to stop animals from eating sapling bark.",
+              "Water Points: Centralized water trough accessible from multiple paddocks."
+            ],
+            "nutrient_cycle": [
+              "Sunlight: Grows Grass & Trees.",
+              "Livestock: Eat Grass (Mowing).",
+              "Manure: Instant Fertilization.",
+              "Trees: Shade cools animals."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Monsoon",
+                "task": "Rest Period: No Grazing. Remove animals. Let the grass establish roots and grow seeds. Cut grass manually if needed (Cut-and-Carry)."
+              },
+              {
+                "time": "Post-Monsoon",
+                "task": "Rotation Start: Introduce animals to Paddock 1. Move to Paddock 2 after 7 days. This allows Paddock 1 to regrow for 3-4 weeks."
+              },
+              {
+                "time": "Winter",
+                "task": "Tree Lopping: Prune lower branches of trees to let sunlight hit the grass. Feed the pruned leaves (fodder) to animals as a protein supplement."
+              },
+              {
+                "time": "Summer",
+                "task": "Stall Feeding: Pasture will dry up. Move animals to shed. Feed preserved hay/silage and tree leaves."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "SOIL COMPACTION",
+                "solution": "Hoof Damage. If animals stay in one spot too long, their hooves pack the soil hard, killing grass roots and preventing rain infiltration. Solution: Rotate them frequently."
+              },
+              {
+                "risk": "Debarking (Eating Bark)",
+                "solution": "Goats/Sheep strip bark when hungry. Apply lime wash to trunks or use tree guards."
+              },
+              {
+                "risk": "Parasites (Worms)",
+                "solution": "Grazing on short grass increases worm intake. Keep grass above 10cm height."
+              }
+            ],
+            "economics": {
+              "dual_cash_flow": "Short Term: Sale of animals (meat/wool) every 6-8 months. Long Term: Sale of Timber or Fruit harvest every year.",
+              "cost_reduction": "Weeding Cost: $0. Animals eat the weeds. Fertilizer Cost: Reduced by 50% due to manure distribution. Feed Cost: Reduced by 60% due to free grazing."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "Broader Integration Types",
+      "category_description": "General integration strategies.",
+      "models": [
+        {
+          "id": "broader-livestock",
+          "homepage_title": "Livestock-Crop",
+          "homepage_description": "Animals fed crop residues; manure returns nutrients.",
+          "detailed_content": {
+            "page_title": "Livestock-Crop Integration",
+            "hero_subtitle": "The 'Golden Loop': Poultry and Vegetables working in perfect harmony.",
+            "feasibility": [
+              {
+                "topic": "Balance Ratio",
+                "detail": "50 Birds : 1 Acre. To prevent nutrient burn from excess manure, keep approximately 50 free-range chickens per acre of vegetable garden."
+              },
+              {
+                "topic": "Crop Selection",
+                "detail": "Heavy Feeders. Vegetables like Corn, Pumpkin, and Spinach love nitrogen-rich poultry manure. Root vegetables (Carrots) generally need aged manure."
+              },
+              {
+                "topic": "Breed Choice",
+                "detail": "Dual Purpose. Select breeds like Rhode Island Red or Kuroiler. They are hardy foragers, good egg layers, and provide meat."
+              }
+            ],
+            "layout_specs": [
+              "Chicken Tractor: A floorless portable coop on wheels. Move it daily to a new patch of land. ",
+              "Perimeter Fencing: Essential to keep predators (dogs/foxes) out and chickens INSIDE the designated zone.",
+              "Compost Zone: A designated area to mix excess manure with dry leaves (browns) to create stable fertilizer."
+            ],
+            "nutrient_cycle": [
+              "Crop Waste: Weeds & Old Leaves.",
+              "Poultry: Eat Waste & Bugs.",
+              "Manure: Rich Nitrogen Output.",
+              "Vegetables: Grow Huge on Manure. "
+            ],
+            "operational_calendar": [
+              {
+                "time": "Pre-Planting",
+                "task": "The Clean-Up: Place Chicken Tractor on the garden bed 2 weeks before planting. They eat weed seeds, insect larvae, and fertilize the soil."
+              },
+              {
+                "time": "Planting",
+                "task": "Exclusion: Remove Chickens. Plant your seeds/seedlings. Chickens will dig up seeds, so they must be fenced out during germination."
+              },
+              {
+                "time": "Growing",
+                "task": "Insect Control: Allow supervised 'duck/chicken patrol' between wide rows (like Corn) to eat bugs, but ensure they don't peck the fruits."
+              },
+              {
+                "time": "Post-Harvest",
+                "task": "The Reset: Release the flock into the field. They eat the leftover stalks, rotten fruit, and break the pest cycle for the next season."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "HOT MANURE",
+                "solution": "Nitrogen Burn. Fresh poultry manure is too strong for young plants. Solution: Let manure age/compost for 3 months before applying directly to delicate crops."
+              },
+              {
+                "risk": "Seed Destruction",
+                "solution": "Chickens scratch soil. Keep them off beds until plants are 6 inches tall."
+              },
+              {
+                "risk": "Food Safety (Salmonella)",
+                "solution": "Stop applying fresh manure 90 days before harvesting leafy greens."
+              }
+            ],
+            "economics": {
+              "reduced_inputs": "Feed Cost: Reduced by 30% as birds forage for bugs and greens. Fertilizer: $0 cost. Manure provides N-P-K naturally.",
+              "stacked_income": "Vegetables: Primary income. Organic veggies sell for a premium. Eggs/Meat: Steady weekly income from the flock."
+            }
+          }
+        },
+        {
+          "id": "broader-aqua",
+          "homepage_title": "Aquaculture-Agriculture",
+          "homepage_description": "Fish ponds irrigate and fertilize adjacent crops.",
+          "detailed_content": {
+            "page_title": "Aquaculture-Agriculture",
+            "hero_subtitle": "The 'Fertigation' Model: Using nutrient-rich fish pond water to irrigate and fertilize crops.",
+            "feasibility": [
+              {
+                "topic": "Water Source",
+                "detail": "Consistent Supply. This model relies on water exchange. You need enough water to fill the pond and refill it after pumping 10-20% out for the crops daily."
+              },
+              {
+                "topic": "Crop Selection",
+                "detail": "Leafy Greens. Spinach, Kale, and Lettuce thrive on the high-nitrogen water from fish ponds. Orchards (Banana/Papaya) also respond very well."
+              },
+              {
+                "topic": "Fish Species",
+                "detail": "Hardy Breeds. Catfish and Tilapia are ideal because they can tolerate fluctuating water levels and produce high waste (rich fertilizer)."
+              }
+            ],
+            "layout_specs": [
+              "Gravity Flow: Ideally, place the fish pond at a higher elevation than the crop fields so water flows down without pumps. ",
+              "Silt Trap: Install a simple mesh filter at the pond outlet to stop large fish waste solids from clogging drip lines.",
+              "Drainage: Ensure crop fields have drainage channels that can route excess water to a bio-filter or secondary pond."
+            ],
+            "nutrient_cycle": [
+              "Fish Waste: Ammonia & Nitrates.",
+              "Irrigation: Pumped to Field.",
+              "Crops: Absorb Nutrients.",
+              "Refill: Fresh Water to Pond."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Daily: Morning Flush",
+                "task": "Pump out 10% of the pond bottom water (sludge rich). Direct this to fruit trees or high-demand crops."
+              },
+              {
+                "time": "Daily: Top Up",
+                "task": "Refill the pond with fresh water. This improves oxygen for fish while stimulating their appetite."
+              },
+              {
+                "time": "Weekly: Filter Clean",
+                "task": "Check the irrigation filters. Fish water contains algae which can clog drip tapes quickly."
+              },
+              {
+                "time": "Seasonally: Desilting",
+                "task": "Once a year, drain the pond completely. Scrape the bottom sludge\u2014this is 'Black Gold' fertilizer for preparing vegetable beds."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "RISK: CLOGGING",
+                "solution": "Algae Blockage. Fish water is full of algae. If you use standard Drip Irrigation, it will clog in days. Solution: Use 'Flood Irrigation' or specialized 'Button Drippers' that can be cleaned."
+              },
+              {
+                "risk": "Salinity Buildup",
+                "solution": "Rare in freshwater, but possible. Test soil EC (Electrical Conductivity) monthly."
+              },
+              {
+                "risk": "Over-Fertilization",
+                "solution": "Crops look 'burnt'. Dilute pond water with fresh water before irrigating."
+              }
+            ],
+            "economics": {
+              "cost_savings": "Fertilizer: Reduced by 100% for Nitrogen needs. Fish water is usually sufficient. Water Efficiency: Every drop serves two purposes (Fish home & Plant drink).",
+              "revenue": "Organic Premium: Crops grown without chemical fertilizers fetch higher prices. Fish Sales: A high-protein bonus crop harvested every 6 months."
+            }
+          }
+        },
+        {
+          "id": "broader-permaculture",
+          "homepage_title": "Polyculture / Permaculture",
+          "homepage_description": "Mimics ecosystems with diverse species for resilience.",
+          "detailed_content": {
+            "page_title": "Permaculture / Polyculture",
+            "hero_subtitle": "The 'Self-Sustaining' Model: Mimicking natural forests to create resilient, low-labor ecosystems.",
+            "feasibility": [
+              {
+                "topic": "Zoning Concept",
+                "detail": "Zone 0-5. Permaculture relies on placing elements based on frequency of use. Zone 1 (Herbs/Veg) is near the house; Zone 5 (Wilderness) is untouched."
+              },
+              {
+                "topic": "Diversity",
+                "detail": "Polyculture Essential. You cannot plant a monoculture. You need a mix of Trees (Canopy), Shrubs, Roots, and Ground Covers to fill every niche."
+              },
+              {
+                "topic": "Water Harvesting",
+                "detail": "Swales. Digging trenches on contour (Swales) to slow, spread, and sink rainwater into the soil is a prerequisite before planting."
+              }
+            ],
+            "layout_specs": [
+              "The Classic Fruit Tree Guild: A family of plants that help each other. ",
+              "Center: Fruit Tree (e.g., Apple/Mango) - The Product.",
+              "Nitrogen Fixer: Legume plant (e.g., Beans/Acacia) - Feeds the tree.",
+              "Accumulator: Deep root plant (e.g., Comfrey) - Mines minerals from deep soil.",
+              "Mulch Plant: Pumpkin/Sweet Potato - Covers soil to retain moisture."
+            ],
+            "nutrient_cycle": [
+              "Photosynthesis: Plants grow Biomass.",
+              "Chop & Drop: Cut plants; leave on soil.",
+              "Soil Life: Worms eat Mulch.",
+              "Feeder Roots: Absorb Nutrients."
+            ],
+            "operational_calendar": [
+              {
+                "time": "Year 1",
+                "task": "Earthworks: Observe the land. Dig swales to catch water. Plant pioneer nitrogen-fixing trees to improve soil."
+              },
+              {
+                "time": "Year 2",
+                "task": "Guild Planting: Plant your main fruit trees. Surround them with supporting guilds (herbs, flowers, pest repellents)."
+              },
+              {
+                "time": "Seasonally",
+                "task": "Mulching: 'Chop and Drop'. Prune the fast-growing nitrogen trees and drop the branches around the fruit trees as instant fertilizer."
+              },
+              {
+                "time": "Year 5+",
+                "task": "Food Forest: Canopy closes. Weeds disappear. Harvest fruits, nuts, and medicinal herbs. System becomes self-maintaining."
+              }
+            ],
+            "risks_and_solutions": [
+              {
+                "risk": "COMPLEXITY",
+                "solution": "Analysis Paralysis. Trying to manage 100 species at once can be overwhelming. Solution: Start with Zone 1 (Kitchen Garden) and expand slowly."
+              },
+              {
+                "risk": "Invasive Species",
+                "solution": "Some hardy plants (like Mint/Bamboo) take over. Plant them in pots or contained areas."
+              },
+              {
+                "risk": "Slow ROI",
+                "solution": "Trees take years to yield. Intercrop with annual vegetables (Radish/Spinach) for quick cash."
+              }
+            ],
+            "economics": {
+              "zero_input": "Fertilizer: $0. Grown on site (Comfrey/Acacia). Pesticide: $0. Predatory wasps and frogs control pests. Water: Reduced by 50% due to Swales and heavy Mulching.",
+              "ultimate_resilience": "Diversity: If one crop fails due to pests, 10 others will thrive. You never have a 'total loss'. Market Shield: You grow food, medicine, and fuel. You are less affected by market price crashes."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

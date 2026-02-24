@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvi-Pastoral & Horti-Pastoral Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #388e3c;
+            /* Pasture Green */
+            --secondary: #795548;
+            /* Tree Trunk Brown */
+            --accent: #cddc39;
+            /* Fresh Grass/Lime */
+            --bg-light: #f1f8e9;
+            /* Light Green Background */
+            --white: #ffffff;
+            --text-dark: #33691e;
+            /* Dark Forest Green */
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #c5e1a5;
+            --nav-hover-bg: #dcedc8;
+            --card-bg: #f9fbe7;
+            --card-border: var(--secondary);
+            --timeline-dot-bg: var(--secondary);
+            --timeline-time-color: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/9.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/9.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Grasses</a>
+            <a href="#layout">2. Rotational Grazing</a>
+            <a href="#cycle">3. Nutrient Flow</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Overgrazing Risks</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Silvi-Pastoral / Horti-Pastoral</h1>
+            <p>The "Green Grazing" Model: Integrating timber or fruit trees with livestock pastures.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Species</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌳 Tree Choice</h3>
+                    <p><strong>Fodder or Fruit.</strong><br>
+                        <strong>Silvi:</strong> Use Nitrogen-fixing trees (Subabul, Acacia) that provide leaf
+                        fodder.<br>
+                        <strong>Horti:</strong> Use hardy fruit trees (Mango, Cashew) that can withstand animal
+                        presence.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>🌱 Pasture Grass</h3>
+                    <p><strong>Shade Tolerant.</strong><br>
+                        You cannot use standard lawn grass. Use shade-tolerant, high-protein species like
+                        <em>Stylosanthes</em>, <em>Cenchrus</em>, or <em>Guinea Grass</em>.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>🐑 Animal Mix</h3>
+                    <p><strong>Grazers vs Browsers.</strong><br>
+                        <strong>Sheep (Grazers):</strong> Eat grass on the ground (Good for orchards).<br>
+                        <strong>Goats (Browsers):</strong> Eat leaves (Good for established forestry, dangerous for
+                        young fruit trees).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure & Layout</h2>
+            </div>
+            <p>The secret to success is "Rotational Grazing" to prevent soil compaction.</p>
+
+            <img src="../images/Silvipasture_Layout.jpg" alt="Silvipasture Layout" class="content-img">
+
+            <div style="background: #f1f8e9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+                <h3>🚧 Construction Specs</h3>
+                <ul>
+                    <li><strong>Paddocks:</strong> Divide the land into 4-6 fenced zones (Paddocks). Animals move to a
+                        new zone every week.</li>
+                    <li><strong>Tree Guards:</strong> Essential for the first 3 years. Use bamboo or wire mesh to stop
+                        animals from eating sapling bark.</li>
+                    <li><strong>Water Points:</strong> Centralized water trough accessible from multiple paddocks.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>Animals mow the grass, fertilize the soil, and the trees provide the climate.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">☀️</span>
+                    <strong>Sunlight</strong>
+                    <p>Grows Grass & Trees</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🐑</span>
+                    <strong>Livestock</strong>
+                    <p>Eat Grass (Mowing)</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">💩</span>
+                    <strong>Manure</strong>
+                    <p>Instant Fertilization</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌳</span>
+                    <strong>Trees</strong>
+                    <p>Shade cools animals</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Managing the grass height is critical. Too short = soil erosion. Too tall = unpalatable.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Monsoon: Rest Period</div>
+                    <p><strong>No Grazing.</strong> Remove animals. Let the grass establish roots and grow seeds. Cut
+                        grass manually if needed (Cut-and-Carry).</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Post-Monsoon: Rotation Start</div>
+                    <p>Introduce animals to Paddock 1. Move to Paddock 2 after 7 days. This allows Paddock 1 to regrow
+                        for 3-4 weeks.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Winter: Tree Lopping</div>
+                    <p>Prune lower branches of trees to let sunlight hit the grass. Feed the pruned leaves (fodder) to
+                        animals as a protein supplement.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Summer: Stall Feeding</div>
+                    <p>Pasture will dry up. Move animals to shed. Feed preserved hay/silage and tree leaves.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ RISK: SOIL COMPACTION</h3>
+                <p><strong>Hoof Damage.</strong> If animals stay in one spot too long, their hooves pack the soil hard,
+                    killing grass roots and preventing rain infiltration. <strong>Solution:</strong> Rotate them
+                    frequently.</p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Debarking (Eating Bark)</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Goats/Sheep strip bark when hungry. Apply
+                        lime wash to trunks or use tree guards.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Parasites (Worms)</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Grazing on short grass increases worm
+                        intake. Keep grass above 10cm height.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Dual Cash Flow</h3>
+                    <ul>
+                        <li><strong>Short Term:</strong> Sale of animals (meat/wool) every 6-8 months.</li>
+                        <li><strong>Long Term:</strong> Sale of Timber or Fruit harvest every year.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>📉 Cost Reduction</h3>
+                    <ul>
+                        <li><strong>Weeding Cost:</strong> $0. Animals eat the weeds.</li>
+                        <li><strong>Fertilizer Cost:</strong> Reduced by 50% due to manure distribution.</li>
+                        <li><strong>Feed Cost:</strong> Reduced by 60% due to free grazing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

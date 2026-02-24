@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permaculture & Polyculture Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* --- THEME VARIABLES --- */
+        :root {
+            --primary: #1b5e20;
+            /* Deep Forest Green */
+            --secondary: #795548;
+            /* Soil/Earth Brown */
+            --accent: #ff6f00;
+            /* Fruit/Harvest Orange */
+            --bg-light: #f1f8e9;
+            /* Nature Light Green */
+            --white: #ffffff;
+            --text-dark: #263238;
+            --sidebar-width: 280px;
+            /* FIXED WIDTH FOR SIDEBAR */
+            --sidebar-border: #c5e1a5;
+            --nav-hover-bg: #dcedc8;
+            --card-bg: #f9fbe7;
+            --flow-border: var(--primary);
+        }
+
+        .hero {
+            /* UPDATED: Uses local image 'images/12.jpg' */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                url('../images/12.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">Integrated Farming</div>
+        <div id="google_translate_element" style="margin-bottom: 20px;"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,te,hi', /* English, Telugu, Hindi */
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="nav-links">
+            <a href="#intro">Overview</a>
+            <a href="#feasibility">1. Site & Zoning</a>
+            <a href="#layout">2. Plant Guilds</a>
+            <a href="#cycle">3. Nutrient Loop</a>
+            <a href="#calendar">4. Operational Calendar</a>
+            <a href="#risks">5. Risks & Design</a>
+            <a href="#economics">6. Economics</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <a href="../IFS_Home.html" class="back-btn">← Back to Home</a>
+
+        <header class="hero" id="intro">
+            <h1>Permaculture / Polyculture</h1>
+            <p>The "Self-Sustaining" Model: Mimicking natural forests to create resilient, low-labor ecosystems.</p>
+        </header>
+
+        <section id="feasibility">
+            <div class="section-header">
+                <h2>1. Site Feasibility & Zoning</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🎯 Zoning Concept</h3>
+                    <p><strong>Zone 0-5.</strong><br>
+                        Permaculture relies on placing elements based on frequency of use. Zone 1 (Herbs/Veg) is near
+                        the house; Zone 5 (Wilderness) is untouched.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🌍 Diversity</h3>
+                    <p><strong>Polyculture Essential.</strong><br>
+                        You cannot plant a monoculture. You need a mix of Trees (Canopy), Shrubs, Roots, and Ground
+                        Covers to fill every niche.</p>
+                </div>
+                <div class="info-card">
+                    <h3>💧 Water Harvesting</h3>
+                    <p><strong>Swales.</strong><br>
+                        Digging trenches on contour (Swales) to slow, spread, and sink rainwater into the soil is a
+                        prerequisite before planting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="section-header">
+                <h2>2. Infrastructure: The "Guild"</h2>
+            </div>
+            <p>In Permaculture, we plant "Guilds"—families of plants that help each other.</p>
+
+            <img src="../images/Permaculture_Guild_Layout.jpg" alt="Permaculture Guild Layout" class="content-img">
+
+            <div style="background: #f1f8e9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+                <h3>🚧 The Classic Fruit Tree Guild</h3>
+                <ul>
+                    <li><strong>Center:</strong> Fruit Tree (e.g., Apple/Mango) - The Product.</li>
+                    <li><strong>Nitrogen Fixer:</strong> Legume plant (e.g., Beans/Acacia) - Feeds the tree.</li>
+                    <li><strong>Accumulator:</strong> Deep root plant (e.g., Comfrey) - Mines minerals from deep soil.
+                    </li>
+                    <li><strong>Mulch Plant:</strong> Pumpkin/Sweet Potato - Covers soil to retain moisture.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cycle">
+            <div class="section-header">
+                <h2>3. The Nutrient Cycle</h2>
+            </div>
+            <p>The "Chop and Drop" method eliminates the need for external fertilizer.</p>
+
+            <div class="flowchart">
+                <div class="flow-step">
+                    <span class="icon">☀️</span>
+                    <strong>Photosynthesis</strong>
+                    <p>Plants grow Biomass</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">✂️</span>
+                    <strong>Chop & Drop</strong>
+                    <p>Cut plants; leave on soil</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🪱</span>
+                    <strong>Soil Life</strong>
+                    <p>Worms eat Mulch</p>
+                </div>
+                <div class="flow-step">
+                    <span class="icon">🌳</span>
+                    <strong>Feeder Roots</strong>
+                    <p>Absorb Nutrients</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="section-header">
+                <h2>4. Operational Calendar</h2>
+            </div>
+            <p>Permaculture focuses on Perennials (plants that live for years), reducing replanting labor.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 1: Earthworks</div>
+                    <p>Observe the land. Dig swales to catch water. Plant pioneer nitrogen-fixing trees to improve soil.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 2: Guild Planting</div>
+                    <p>Plant your main fruit trees. Surround them with supporting guilds (herbs, flowers, pest
+                        repellents).</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Seasonally: Mulching</div>
+                    <p><strong>"Chop and Drop".</strong> Prune the fast-growing nitrogen trees and drop the branches
+                        around the fruit trees as instant fertilizer.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Year 5+: Food Forest</div>
+                    <p>Canopy closes. Weeds disappear. Harvest fruits, nuts, and medicinal herbs. System becomes
+                        self-maintaining.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="risks">
+            <div class="section-header">
+                <h2>5. Risks & Solutions</h2>
+            </div>
+
+            <div
+                style="background-color: #ffebee; border: 2px solid #ef5350; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #c62828;">⚠️ RISK: COMPLEXITY</h3>
+                <p><strong>Analysis Paralysis.</strong> Trying to manage 100 species at once can be overwhelming.
+                    <strong>Solution:</strong> Start with Zone 1 (Kitchen Garden) and expand slowly.
+                </p>
+            </div>
+
+            <table style="width:100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th style="padding:10px; text-align:left;">Problem</th>
+                    <th style="padding:10px; text-align:left;">Solution</th>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Invasive Species</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Some hardy plants (like Mint/Bamboo) take
+                        over. Plant them in pots or contained areas.</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Slow ROI</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">Trees take years to yield. Intercrop with
+                        annual vegetables (Radish/Spinach) for quick cash.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="economics">
+            <div class="section-header">
+                <h2>6. Economics</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>💰 Zero Input</h3>
+                    <ul>
+                        <li><strong>Fertilizer:</strong> $0. Grown on site (Comfrey/Acacia).</li>
+                        <li><strong>Pesticide:</strong> $0. Predatory wasps and frogs control pests.</li>
+                        <li><strong>Water:</strong> Reduced by 50% due to Swales and heavy Mulching.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>🛡️ Ultimate Resilience</h3>
+                    <ul>
+                        <li><strong>Diversity:</strong> If one crop fails due to pests, 10 others will thrive. You never
+                            have a "total loss".</li>
+                        <li><strong>Market Shield:</strong> You grow food, medicine, and fuel. You are less affected by
+                            market price crashes.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
