@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+            height: 100vh;
+            cursor: pointer;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.5s;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .green {
+            background-color: #00ad00;
+            border-top-left-radius: 100%;
+        }
+
+        .red {
+            background-color: #ff3e3e;
+            border-top-right-radius: 100%;
+        }
+
+        .yellow {
+            background-color: #f1db00;
+            border-bottom-left-radius: 100%;
+        }
+
+        .blue {
+            background-color: #0081ff;
+            border-bottom-right-radius: 100%;
+        }
+
+        .simon-board {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            background-color: black;
+            border-radius: 50%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .green,
+        .red,
+        .yellow,
+        .blue {
+            border: 10px solid black;
+            text-align: center;
+            align-content: center;
+            font-size: 100px;
+            font-weight: bolder;
+        }
+
+        .start {
+            position: absolute;
+            align-self: center;
+            justify-self: center;
+            border: 5px solid black;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            font-size: 70px;
+            text-align: center;
+            align-content: center;
+        }
+
+        div div:active {
+            transform: scale(0.98);
+        }
+
+        .flash {
+            filter: brightness(2.5);
+            background-color: white !important;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .gameover {
+            background-color: red;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.5s;
+        }
+
+        .color {
+            color: rgba(0, 0, 0, 0.2) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simon Game</h1>
+    <h2>Press start to start game</h2>
+    <div class="simon-board">
+        <div type="button" class="green color" id="green">1</div>
+        <div type="button" class="red color" id="red">2</div>
+        <div type="button" class="yellow color" id="yellow">3</div>
+        <div type="button" class="blue color" id="blue">4</div>
+        <div type="" class="start">Start</div>
+    </div>
+</body>
+<script>
+    let gameseq = [];
+    let userseq = [];
+    let level = 0;
+    let btns = ["green", "red", "yellow", "blue"];
+    let h2 = document.querySelector("h2");
+    let started = false;
+    let startbtn = document.querySelector(".start");
+    startbtn.addEventListener("click", function (event) {
+        if (started == false) {
+            started = true;
+            document.body.classList.remove("gameover");
+            startbtn.classList.add("hide");
+            setTimeout(levelup, 1000);
+        }
+    });
+    function btnflash(btn) {
+        btn.classList.add("flash");
+        setTimeout(function () {
+            btn.classList.remove("flash");
+        }, 100);
+    }
+    function levelup() {
+        userseq = [];
+        level++;
+        h2.innerHTML = `Level ${level}`;
+        let randIdx = Math.floor(Math.random() * 4);
+        let randColor = btns[randIdx];
+        let randBtn = document.querySelector(`.${randColor}`);
+        gameseq.push(randColor);
+        btnflash(randBtn);
+    }
+    function checkAns(idx) {
+        if (userseq[idx] === gameseq[idx]) {
+            if (userseq.length == gameseq.length) {
+                setTimeout(levelup, 1000);
+            }
+        }
+        else {
+            document.body.classList.add("gameover");
+            h2.innerHTML = `Game Over Score:${level > 0 ? level - 1 : 0}`;
+            reset();
+        }
+    }
+    function btnPress() {
+        let btn = this;
+        btnflash(btn);
+        let userColor = btn.getAttribute("id");
+        userseq.push(userColor);
+        checkAns(userseq.length - 1);
+    }
+    let allBtns = document.querySelectorAll(".color");
+    for (btn of allBtns) {
+        btn.addEventListener("click", btnPress);
+    }
+    function reset() {
+        startbtn.innerHTML = "Restart";
+        startbtn.classList.remove("hide");
+        startbtn.style.fontSize = "50px";
+        started = false;
+        gameseq = [];
+        userseq = [];
+        level = 0;
+    }
+</script>
+
+</html>
